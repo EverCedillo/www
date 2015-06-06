@@ -106,6 +106,7 @@ html,body{
 }
 #s2{
 	background: #AAA5A5 url("/images/background2.jpg") no-repeat  center;
+	background-position: right;
 	background-size: cover;
 }
 #s3{
@@ -323,11 +324,12 @@ Media Queries*/
 	.slide-text{
 		padding: 5rem 1rem;
 		font-size: 1rem;
+		margin-top: 9rem;
 	}
 	.team-item{
 		display: block;
 		margin: auto;
-		width: 40%;
+		width: 80%;
 	}
 	#Nosotros{
 		text-align: center;
@@ -337,12 +339,31 @@ Media Queries*/
 		font-size:0.7rem;
 	}
 	.Reg-button{
-		width: 8rem;
-		margin: 3px;
+		width: 6rem;
+		margin: 0 5px;
 		font-size: 1rem;
+	}
+	#Team{
+		padding: 0;
 	}
 	.Nav{
 		font-size: 1rem;
+		overflow: hidden;
+	}
+	#Header-menu{
+		margin: 0;
+  		padding-top: 1.4rem;
+	}
+	.logo-container.visible{
+		margin-left: 1rem;
+		width: 2rem;
+	}
+	.RegBar-btn{
+		margin-top: 1rem;
+
+	}
+	#RegBar{
+		height: auto;
 	}
 
 }
