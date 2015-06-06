@@ -325,7 +325,7 @@ Media Queries*/
 	.slide-text{
 		padding: 5rem 1rem 0;
 		font-size: 1rem;
-		margin-top: 6rem;
+		margin-top: 5rem;
 	}
 	.team-item{
 		display: block;
@@ -353,11 +353,12 @@ Media Queries*/
 	}
 	#Header-menu{
 		margin: 0;
-  		padding-top: 1.4rem;
+  		padding-top: 1.5rem;
 	}
 	.logo-container.visible{
 		margin-left: 1rem;
 		width: 2rem;
+		left: 0.5rem;
 	}
 	.RegBar-btn{
 		margin-top: 1rem;
