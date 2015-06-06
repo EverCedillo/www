@@ -9,13 +9,24 @@ html,body{
 }
 .Nav{
 	text-align: right;
-	background: #5D0E68;
-	
+	background: rgba(93, 14, 104, 1);
+	transition: 0.5s;
 	height: 6rem;
 	width: 100%;
 	z-index: 1;
-	position: absolute;
+	position: fixed;
 	}
+
+.onScroll{
+	background: rgba(93, 14, 104, 0.8);
+	height: 5.9rem;
+	margin-top: -1rem;
+
+}
+#logo{
+	width: 140px;
+	margin: 0 auto;
+}
 #Conoce{
 	z-index: 0;
 }
@@ -38,6 +49,7 @@ html,body{
 	cursor: pointer;
 	width: 12rem;
 	height: 2rem;
+	transition: 0.5s;
 	border-radius: 12px;
 	background-color: #10A2AD;
 	margin: 30px 70px;
@@ -54,6 +66,14 @@ html,body{
 }
 .logo-container{
 	display: inline-block;
+	left: 1rem;
+  	top: 0.5rem;
+  	position: absolute;
+  	visibility: hidden;
+  	
+}
+.logo-container.visible{
+	visibility: visible;
 }
 
 .turquoise{
@@ -76,12 +96,20 @@ html,body{
 .slide {
 	margin: 0;
 	width: 100%;
-	height: 100%
+	height: 100%;
 	position: absolute;
 }
 .slide img{width: 100%;}
-.s1{
-	background-image: url('/images/background1.jpg');
+#s1{
+	background: #AAA5A5 url("/images/background1.jpg") no-repeat  center;
+	background-size: cover;
+}
+#s2{
+	background: #AAA5A5 url("/images/background2.jpg") no-repeat  center;
+	background-size: cover;
+}
+#s3{
+	background: #AAA5A5 url("/images/background3.jpg") no-repeat center;
 	background-size: cover;
 }
 
@@ -89,6 +117,9 @@ html,body{
 	margin-top: 8rem;
 	font-size: 3.75rem;
 	margin-bottom: 0.1em;
+}
+.esp{
+	margin-top: 1rem;
 }
 .slide-text{
 	margin: 0;
@@ -100,7 +131,7 @@ html,body{
 }
 .arrow{
 	color: white;
-	text-shadow: 0 0 9px rgb(16, 162, 173);
+	text-shadow: 0 0 9px black;
 }
 
 
@@ -204,7 +235,7 @@ html,body{
 }
 
 #Nosotros{
-	height: 100%;
+	/*height: 100%;*/
 	background-color: white;
 	text-align: center;
 }
@@ -262,6 +293,7 @@ html,body{
 }
 #Team{
 	display: block;
+	margin: 0;
 }
 #Title-team{
 	padding: 2.8rem 0;
@@ -278,4 +310,31 @@ html,body{
 } 
 .team-itemMail{
 	color: #AAA5A5;
+}
+
+/*Responsive
+Media Queries*/
+
+@media (max-width: 800px) {
+	.slide-title{
+		font-size: 2.75rem;
+		word-wrap: break-word;
+	}
+	.slide-text{
+		padding: 9rem 5rem;
+		font-size: 1.875rem;
+	}
+	.team-item{
+		display: block;
+		margin: auto;
+		width: 40%;
+	}
+	#Nosotros{
+		text-align: center;
+	}
+	.footer-item{
+		width: 48%;
+		font-size:0.7rem;
+	}
+
 }
