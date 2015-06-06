@@ -336,6 +336,13 @@ Media Queries*/
 		width: 48%;
 		font-size:0.7rem;
 	}
+	.Reg-button{
+		width: 8rem;
+		font-size: 1rem;
+	}
+	.Nav{
+		font-size: 1rem;
+	}
 
 }
 /*
