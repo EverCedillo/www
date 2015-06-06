@@ -1,0 +1,2 @@
+mail.php
+$sql = "INSERT INTO `ohana_mailing`.`TOH001_MAIL_LIST` (`CD_INTERESADO`, `NB_MAIL`, `TM_STAMP`) VALUES (NULL, \'\', CURRENT_TIMESTAMP);";
