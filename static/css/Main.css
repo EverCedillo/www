@@ -315,7 +315,7 @@ html,body{
 /*Responsive
 Media Queries*/
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 	.slide-title{
 		font-size: 2rem;
 		word-wrap: break-word;
