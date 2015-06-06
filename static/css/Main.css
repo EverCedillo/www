@@ -189,7 +189,7 @@ html,body{
 	margin: .5em;
 }
 .rrss{
-	padding: .4em .4em 0 0;
+	padding: 0 .4em 0 0;
 }
 .footer-message{
 	background: rgb(62, 7, 71);
@@ -273,5 +273,5 @@ html,body{
 	vertical-align: top;
 } 
 .team-itemMail{
-	padding: 0 12px;
+	color: #AAA5A5;
 }
