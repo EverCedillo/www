@@ -1,32 +1,37 @@
-<!--DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Ohana Home</title>
-	<!--link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/Main.css">
-	<script type="text/javascript" src="script/jquery-1.11.2.js"></script-->
-	<!--script type="text/javascript" src="script/scripts.js"></script>
-	<!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">>
+	<script type="text/javascript" src="script/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="script/scripts.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
-<body-->
-		<nav class="Nav turquoise">
-		<figure class="logo-container">
-			<img src="">
-		</figure>
-		<ul class='MainMenuList'>
-			<a href='index.html#Conoce' class='MainMenu-link'><li class='MainMenu-item'>Conoce</li></a>
-			<a href='index.html#Registro' class='MainMenu-link'><li class='MainMenu-item'>Regístrate</li></a>
-			<a href='nosotros.html' class='MainMenu-link'><li class='MainMenu-item'>Nosotros</li></a>
-		</ul>
-	</nav>
-	<div id="Nosotros">
-		<h2 id="Title-team">Ohana Team g</h2>
-		<div id="Team">
-			<div class="team-item">
-				<figure>
+<body>
+	<nav class="Nav turquoise">
+			<ul id="Header-menu">
+				<li class="Header-menuItem">
+					<figure class="logo-container">
 					<img src="">
+					</figure>
+				</li>
+				<li class="Header-menuItem">
+					<a href="index.html" class="Header-menuLink">Conoce</a>
+				</li>
+				<li class="Header-menuItem">
+					<div id="ModalReg" class="Reg-button prpl">Registrarse</div>
+				</li>
+			</ul>
+		</nav>
+	<div id="Nosotros">
+		<h2 id="Title-team">Ohana Team</h2>
+		<ul id="Team">
+			<li class="team-item">
+				<figure>
+					<img src="images/ernesto.png">
 				</figure>
 				<div class="team-itemName">Ernesto J. Silva</div>
 				<div class="team-itemRole">Founder Operations & Logistics Manager</div>
@@ -34,10 +39,10 @@
 					<i class="fa fa-envelope-o"></i>
 					esilva@ohanahome.mx
 				</div>
-			</div>
-			<div class="team-item">
+			</li>
+			<li class="team-item">
 				<figure>
-					<img src="">
+					<img src="images/cesar.png">
 				</figure>
 				<div class="team-itemName">Cesar Islas</div>
 				<div class="team-itemRole">Project Manager</div>
@@ -45,21 +50,21 @@
 					<i class="fa fa-envelope-o"></i>
 					cislas@ohanahome.mx
 				</div>
-			</div>
-			<div class="team-item">
+			</li>
+			<li class="team-item">
 				<figure>
-					<img src="">
+					<img src="images/jesus.png">
 				</figure>
 				<div class="team-itemName">Jesús Cedillo</div>
 				<div class="team-itemRole">Back/Front-end Developer</div>
 				<div class="team-itemMail">
 					<i class="fa fa-envelope-o"></i>
-
+						j.cedillo@ohanahome.mx
 				</div>
-			</div>
-			<div class="team-item">
+			</li>
+			<li class="team-item">
 				<figure>
-					<img src="">
+					<img src="images/luis.png">
 				</figure>
 				<div class="team-itemName">Luis Comonfort</div>
 				<div class="team-itemRole">Back/Front-end Developer</div>
@@ -67,19 +72,65 @@
 					<i class="fa fa-envelope-o"></i>
 					comonfort@ohanahome.mx
 				</div>
-			</div>
-			<div class="team-item">
+			</li>
+			<li class="team-item">
 				<figure>
-					<img src="">
+					<img src="images/lucio.png">
 				</figure>
 				<div class="team-itemName">Lucio Sánchez</div>
 				<div class="team-itemRole">Lead Designer</div>
 				<div class="team-itemMail">
 					<i class="fa fa-envelope-o"></i>
-
+					lucio@ohanahome.mx
 				</div>
-			</div>			
+			</li>			
+		</ul>
+	</div>
+	<div id="RegBar">
+		<p class="RegBar-text">Regístrate y mantente conectado</p>
+		<form class="RegBar-form">
+			<input type="text" placeholder="Correo" class="RegBar-inputMail">
+			<input type="submit" value="Registrarme" class="RegBar-btn">
+		</form>
+
+	</div>
+		<footer id="Footer">
+		<ul class="footer-list">
+
+			<li class="footer-item">
+				<div class="footer-title">
+					Contáctanos
+				</div>
+				<div class="footer-content">
+					<i class="fa fa-envelope-o fa-lg"><p class="mail">contacto@ohanahome.mx</p></i>
+				</div>
+			</li>
+			<li class="footer-item">
+				<div class="footer-title">
+					Redes Sociales
+				</div>
+				<div class="footer-content">
+					<i class="fa fa-facebook-square fa-2x rrss"></i>
+					<i class="fa fa-google-plus-square fa-2x rrss"></i>
+					<i class="fa fa-twitter-square fa-2x rrss"></i>
+				</div>
+			</li>
+			<li class="footer-item">
+				<div class="footer-title">
+					Aviso de Privacidad
+				</div>
+			</li>
+		</ul>
+		<p class="footer-message">Todos los derechos reservados Ohana Home 2015</p>
+	</footer>
+	<div id="Modal-pane">
+		<div id="RegContainer">
+			<p class="Modal-text">Registrate</p>
+			<form class="RegBar-form">
+			<input type="text" placeholder="Correo" class="RegBar-inputMail">
+			<input type="submit" value="Registrarme" class="RegBar-btn">
+		</form>
 		</div>
 	</div>
-<!--/body>
-</html-->
+</body>
+</html>

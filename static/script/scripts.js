@@ -6,7 +6,17 @@ function init(){
     	return 'Your own message goes here...';
 	});*
 	fadeinShow();*/
-	
+	$('#RegContainer').click(function(event) {
+		event.stopPropagation();
+	})
+	$('html').click(function() {
+	//Hide the menus if visible
+		$('#Modal-pane').removeClass('visible');
+	});
+	$('#ModalReg').on('click',function(event) {
+		$('#Modal-pane').toggleClass('visible');
+		event.stopPropagation();
+	});
 	$('.MainMenu-link').on('click',function(event) {
 	    var target = $( $(this).attr('href') );
 	    if( target.length ) {
@@ -19,11 +29,7 @@ function init(){
 
 }
 
-$('#coso').ready(function() {
-	window.setInterval(function() {
-		loadTimeLine(sendTimeLine)
-	},3000);
-});
+
 function loadTimeLine(callback){
 	jQuery.ajax({
 		url:"nosotros.html",
