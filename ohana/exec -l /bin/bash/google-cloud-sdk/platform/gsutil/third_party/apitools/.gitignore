@@ -1,8 +1,0 @@
-*~
-*.py[cod]
-*.egg-info/
-build/
-dist/
-distribute-*
-# Test files
-.tox/
