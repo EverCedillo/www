@@ -338,6 +338,7 @@ Media Queries*/
 	}
 	.Reg-button{
 		width: 8rem;
+		margin: 3px;
 		font-size: 1rem;
 	}
 	.Nav{
