@@ -24,7 +24,7 @@ html,body{
 
 }
 #logo{
-	width: 140px;
+	width: 160px;
 	margin: 0 auto;
 }
 #Conoce{
@@ -315,7 +315,31 @@ html,body{
 /*Responsive
 Media Queries*/
 
-@media (max-width: 800px) {
+@media (min-width: 600px) {
+	.slide-title{
+		font-size: 2rem;
+		word-wrap: break-word;
+	}
+	.slide-text{
+		padding: 5rem 1rem;
+		font-size: 1rem;
+	}
+	.team-item{
+		display: block;
+		margin: auto;
+		width: 40%;
+	}
+	#Nosotros{
+		text-align: center;
+	}
+	.footer-item{
+		width: 48%;
+		font-size:0.7rem;
+	}
+
+}
+/*
+@media (max-width: 600px) {
 	.slide-title{
 		font-size: 2.5rem;
 		word-wrap: break-word;
