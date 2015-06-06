@@ -1,0 +1,134 @@
+html,body{
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	height: 100%;
+	background-color: #ddd;
+}
+header{
+	height: 100%;
+}
+.Nav{
+	text-align: right;
+	background: rgb(93, 14, 104);
+	overflow: hidden;
+}
+.MainMenuList{
+	color:white;
+	list-style: none;
+	margin: 0;
+	display: inline-block;
+	margin-right: 6em;
+
+}
+.MainMenu-item{
+	color: white;
+	padding:1.2em 1em;
+	display: inline-block;
+	border-bottom: 3px solid transparent;
+	transition: 1s;
+}
+.MainMenu-item:hover{
+	border-bottom: 3px #ccc solid;
+}
+.MainMenu-link{
+	text-decoration: none;
+	color: white;
+}
+.logo-container{
+	display: inline-block;
+}
+
+.turquoise{
+	background-color: rgb(16, 162, 173);
+}
+#Main{
+	height: 200%;
+
+}
+.slide-container, #Conoce{
+	width: 100%;
+	height:100%;
+	position: relative;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+
+}
+.slide {
+	margin: 0;
+	width: 100%;
+	position: absolute;
+}
+.slide img{width: 100%;}
+.slide-title{
+	font-size: 1.6em;
+	margin-bottom: 0.1em;
+}
+.slide-text{
+	margin: 0;
+	color: white;
+	padding:4em 4em 0 4em;
+	font-size: 2.2em;
+	position: relative;
+	text-shadow: 2px 2px 6px #000000;
+}
+.arrow{
+	color: white;
+	text-shadow: 0 0 9px rgb(16, 162, 173);
+}
+
+
+#Registro{
+	background-color: rgb(93, 14, 104);
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+.footer-list{
+	list-style: none;
+	margin: 0;
+	text-align: left;
+}
+.footer-item{
+	vertical-align: top;
+	width: 33%;
+	display: inline-block;
+}
+.footer-title{
+	display: inline-block;
+	font-size: 1.1em;
+	margin: 0.9em auto 1.2em auto;
+}
+.footer-content{
+	display: block;
+}
+.mail{
+	font-size: .75em;
+	display: inline-block;
+	margin: .5em;
+}
+.rrss{
+	padding: .4em .4em 0 0;
+}
+.footer-message{
+	margin: 0;
+	font-size: .8em;
+	padding: 4em 0 1em 0;
+}
+
+#Nosotros{
+	height: 100%;
+	background-color: white;
+}
+
+
+#Team{
+	display: block;
+}
+#Title-team{
+	margin: 0;
+	margin-bottom: 3em;
+}
+.team-item{
+	display: inline-block;
+} 

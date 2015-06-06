@@ -1,42 +1,30 @@
-body{
+html,body{
 	background: #0d0d0d;
+	height: 100%;
 }
 header{
 	position: relative;
 	width: 100%;
-	height: 40em;
+	height: 100%;
 	overflow: hidden;
 	border-bottom: aqua 3px solid;
+}
+#fadeInShow{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
 }
 #fadeInShow-mask{
 	position: absolute;
 	background-color: rgba(0,0,0,.5);
 	width: 100%;
 	height: 100%;
-}
-#header-logoContainer{
-	margin: 3em auto;
-	display: block;
-	position: relative;
-	width: 6em;
-	height: 6em;
-	overflow: hidden;
-	border-radius: 100%;
-}
-#header-logo{
-	height: 100%;
-}
-#header-text{
-	text-align: center;
-	margin: auto;
-	color: white;
-	font-size: 3em;
-	position: relative;
+	z-index: 1;
 }
 #fadeInShow-container{
 	z-index: -1;
 	width: 100%;
-	position: absolute;
 }
 .fadeInShow{
 	width: 100%;
@@ -52,6 +40,34 @@ header{
 .fadeInShow img{
 	width: 100%;
 }
+#header-logoContainer{
+	margin: 3em auto 1.5em auto;
+	display: block;
+	position: relative;
+	width: 6em;
+	height: 6em;
+	overflow: hidden;
+	border-radius: 100%;
+}
+#header-logo{
+	height: 100%;
+}
+#header-text{
+	text-align: center;
+	margin: auto;
+	color: white;
+	font-size: 2.5em;
+	position: relative;
+	padding: .5em 4em;
+}
+#header-title{
+	margin: .1em auto;
+	font-size: 1.5em;
+}
+#header-description{
+	font-size: .5em;
+}
+
 
 #MainMenu{
 	text-align: center;
@@ -66,4 +82,30 @@ header{
 .MainMenu-item{
 	margin:.2em 1em;
 	display: inline-block;
+}
+#Modal{
+	display: none;
+}
+#Modal.visible{
+	display: block;
+	position: fixed;
+    /* center the element */
+    right: 0;
+    top: 10em;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    min-height: 10em;
+    width: 90%;
+
+	background: white;
+	color: black;
+}
+
+#About{
+
+}
+#Contact{
+
 }

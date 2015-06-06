@@ -1,46 +1,162 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Try</title>
-	<link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
-	<script type="text/javascript" src="../static/script/jquery-1.11.2.js"></script>
-	<script type="text/javascript" src="../static/script/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="script/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="script/scripts.js"></script>
 </head>
 <body>
 	<header>
-		<div id='fadeInShow-mask'>
+		<div id='fadeInShow'>
+			<div id='fadeInShow-mask'>
+			</div>
 			<div id="fadeInShow-container">
 				<figure class="fadeInShow">
-					<img src="../static/images/banner1.jpg">
+					<img src="images/banner1.jpg">
 				</figure>
 				<figure class="fadeInShow">
-					<img src="../static/images/banner2.jpg">
+					<img src="images/banner2.jpg">
 				</figure>
 				<figure class="fadeInShow">
-					<img src="../static/images/banner3.jpg">
+					<img src="images/banner3.jpg">
 				</figure>
 				<figure class="fadeInShow">
-					<img src="../static/images/banner4.jpg">
+					<img src="images/banner4.gif">
 				</figure>
 			</div>
 		</div>
 		<figure id='header-logoContainer'>
-			<img src="../static/images/banner1.jpg" id='header-logo'>
+			<img src="images/tiny-logo.jpg" id='header-logo'>
 		</figure>
 		<div id='header-text'>
-			Hi!<br>
-			This is a try page!
+			<p id='header-title'>
+				Ohana Home
+			</p>
+			<p id='header-subtitle'>
+				Home <b>automation</b> like you've never seen before.
+			</p>
+			<p id='header-description'>
+				Ohana Home is a Startup company based in Mexico City.
+				A collection of students with different backgrounds work together in order to create the next big thing.
+			</p>
+			
 		</div>
 	</header>
 	<nav id='MainMenu'>
 		<ul id='MainMenuList'>
-			<li class='MainMenu-item'>Home</li>
-			<li class='MainMenu-item'>About Us</li>
-			<li class='MainMenu-item'>Contact</li>
+			<li class='MainMenu-item'><a href='#Home' class='MainMenu-link'>Home</a></li>
+			<li class='MainMenu-item'><a href='#About' class='MainMenu-link'>About Us</a></li>
+			<li class='MainMenu-item'><a href='contact.html' class='MainMenu-link'>Contact</a></li>
 		</ul>
 	</nav>
+	<div id='About'>
+		About
+	</div>
+	<div id="Contact">
+		Contact
+	</div>
+	<div id="Modal">Formulario</div>
 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ohana Home</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/Main.css">
+	<script type="text/javascript" src="script/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="script/scripts.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header id="Header">
+		<nav class="Nav">
+			<figure class="logo-container">
+				<img src="">
+			</figure>
+			<ul class='MainMenuList'>
+				<a href='#Conoce' class='MainMenu-link'><li class='MainMenu-item'>Conoce</li></a>
+				<a href='#Registro' class='MainMenu-link'><li class='MainMenu-item'>Regístrate</li></a>
+				<a href='nosotros.html' class='MainMenu-link'><li class='MainMenu-item'>Nosotros</li></a>
+			</ul>
+		</nav>
+		<div id="Conoce">
+			<figure class="slide">	
+				<img src="/images/banner1.jpg">
+			</figure>
+			<div class="slide-text">
+				<h2 class="slide-title">"Completamos tu hogar"</h2>
+				Un sistema de administración para la familia
+			</div>
+			<i class="fa fa-chevron-down arrow fa-lg"></i>
+		</div>
+	</header>
+
+		<div class="slide-container">
+			<figure class="slide">	
+				<img src="/images/banner2.jpg">
+			</figure>
+			<div class="slide-text">
+				<h2 class="slide-title">"Conecta y administra"</h2>
+				Completa las necesidades indivivuales de tu familia
+			</div>
+			<i class="fa fa-chevron-down arrow fa-lg"></i>
+		</div>
+		<div class="slide-container">
+			<figure class="slide">	
+				<img src="images/banner3.jpg">
+			</figure>
+			<div class="slide-text">
+				<h2 class="slide-title">
+				"Tu hogar nunca estuvo tan completo"</h2>
+			</div>
+			<i class="fa fa-chevron-down arrow fa-lg"></i>
+		</div>
+	
+	<footer id="Registro">
+		<ul class="footer-list">
+			<li class="footer-item">
+				<div class="footer-title">
+					Regístrate y mantente conectado
+				</div>
+				<div class="footer-content">
+					<form>
+						<input type="text" placeholder="e-mail">
+						<input type="submit" value="Registrarme">
+					</form>
+				</div>
+			</li>
+			<li class="footer-item">
+				<div class="footer-title">
+					Contáctanos
+				</div>
+				<div class="footer-content">
+					<i class="fa fa-envelope-o fa-lg"><p class="mail">contacto@ohanahome.mx</p></i>
+				</div>
+			</li>
+			<li class="footer-item">
+				<div class="footer-title">
+					Redes Sociales
+				</div>
+				<div class="footer-content">
+					<i class="fa fa-facebook-square fa-2x rrss"></i>
+					<i class="fa fa-google-plus-square fa-2x rrss"></i>
+					<i class="fa fa-twitter-square fa-2x rrss"></i>
+				</div>
+			</li>
+		</ul>
+		<p class="footer-message">Todos los derechos reservados Ohana Home 2015</p>
+	</footer>
+	<div id="cosso">
+
+	</div>
+	
 </body>
 </html>

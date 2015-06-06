@@ -1,8 +1,50 @@
 $( document ).ready(init);
 
 function init(){
+	/*$(window).on('beforeunload', function() {
+		$('#Modal').toggleClass('visible');
+    	return 'Your own message goes here...';
+	});*
+	fadeinShow();*/
 	
-	fadeinShow();
+	$('.MainMenu-link').on('click',function(event) {
+	    var target = $( $(this).attr('href') );
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, 1300);
+	    }
+	});
+
+}
+
+$('#coso').ready(function() {
+	window.setInterval(function() {
+		loadTimeLine(sendTimeLine)
+	},3000);
+});
+function loadTimeLine(callback){
+	jQuery.ajax({
+		url:"nosotros.html",
+		cache:false,
+		dataType: "text",
+		async:true,
+		success: function (text) {
+			callback(text);
+		}
+
+	});
+}
+function sendTimeLine(content) {
+	$(coso).html(content);
+}
+
+
+/*
+function bye(){
+	alert("bye");
+	console.log("bye")
 }
 
 function fadeinShow(){
@@ -17,3 +59,4 @@ function fadeinShow(){
 	,3000);
 }
 
+*/

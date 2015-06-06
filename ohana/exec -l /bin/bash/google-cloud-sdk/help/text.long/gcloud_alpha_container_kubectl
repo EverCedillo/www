@@ -1,0 +1,52 @@
+NAME
+
+      gcloud alpha container kubectl - call kubectl with arbitrary arguments
+
+SYNOPSIS
+
+      gcloud alpha container kubectl [--cluster CLUSTER, -n CLUSTER]
+      [--purge-config-cache] [--zone ZONE, -z ZONE] [GLOBAL-FLAG ...]
+      [KUBECTL_ARGS ...]
+
+DESCRIPTION
+
+      This command is deprecated! You can run kubectl directly after calling
+
+      $ gcloud alpha container get-credentials $ kubectl ...
+
+POSITIONAL ARGUMENTS
+
+      [KUBECTL_ARGS ...]
+
+         Arbitrary arguments to pass to kubectl
+
+FLAGS
+
+      --cluster CLUSTER, -n CLUSTER
+
+         The name of the cluster to issue commands to.
+
+      --purge-config-cache
+
+         Clear cached config data for the cluster. If set, will call 'container
+         clusters describe' directly to get cluster data before executing
+         kubernetes client command.
+
+GROUP FLAGS
+
+      --zone ZONE, -z ZONE
+
+         The compute zone (e.g. us-central1-a) for the cluster
+
+GLOBAL FLAGS
+
+      Run $ gcloud help or $ gcloud --help for a description of the global flags
+      available to all commands.
+
+NOTES
+
+      This command is in the Google Cloud SDK gcloud component. See installing
+      components if it is not installed.
+
+      This command is currently in ALPHA and may change without notice.
+
