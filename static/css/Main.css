@@ -317,12 +317,12 @@ Media Queries*/
 
 @media (max-width: 800px) {
 	.slide-title{
-		font-size: 2.75rem;
+		font-size: 1.5rem;
 		word-wrap: break-word;
 	}
 	.slide-text{
 		padding: 9rem 5rem;
-		font-size: 1.875rem;
+		font-size: 1rem;
 	}
 	.team-item{
 		display: block;
