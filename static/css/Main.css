@@ -319,12 +319,13 @@ Media Queries*/
 @media (max-width: 600px) {
 	.slide-title{
 		font-size: 2rem;
+		margin: 0;
 		word-wrap: break-word;
 	}
 	.slide-text{
-		padding: 5rem 1rem;
+		padding: 5rem 1rem 0;
 		font-size: 1rem;
-		margin-top: 9rem;
+		margin-top: 6rem;
 	}
 	.team-item{
 		display: block;
@@ -365,7 +366,9 @@ Media Queries*/
 	#RegBar{
 		height: auto;
 	}
-
+	.RegBar-text{
+		margin-bottom: 0.9rem;
+	}
 }
 /*
 @media (max-width: 600px) {
