@@ -159,17 +159,19 @@ html,body{
 	display: inline-block;
 }
 .RegBar-inputMail{
-	appearance: none;
-  	box-shadow: none;
+	box-shadow: none;
 	background-color: #AAA5A5;
 	border-radius: 12px;
 	color: white;
+	border: 0;
 	width: 18.75rem;
 	margin: 2px;
 	padding: 3px 0 3px 10px;
 	height: 1.2rem;
 }
 .RegBar-btn{
+	box-shadow: none;
+	border: 0;
 	width: 8.125rem;
 	height: 1.875rem;
 	border-radius: 12px;
