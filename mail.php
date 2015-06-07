@@ -10,8 +10,8 @@ if (!$con)
   }
  
 mysql_select_db("web", $con);
-$sql = "INSERT INTO ohana_mailing.TOH001_MAIL_LIST ('NB_MAIL') VALUES ('$_POST[email_ohana]')";
-$sql = "INSERT INTO `ohana_mailing`.`TOH001_MAIL_LIST` (`CD_INTERESADO`, `NB_MAIL`, `TM_STAMP`) VALUES (NULL, '$_POST[email_ohana]', CURRENT_TIMESTAMP);";
+$sql = "INSERT INTO ohana_mailing.TOH001_MAIL_LIST ('NB_MAIL') VALUES ('$_GET[email_ohana]')";
+$sql = "INSERT INTO `ohana_mailing`.`TOH001_MAIL_LIST` (`CD_INTERESADO`, `NB_MAIL`, `TM_STAMP`) VALUES (NULL, '$_GET[email_ohana]', CURRENT_TIMESTAMP);";
  
 if (!mysql_query($sql,$con))
   {
