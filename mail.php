@@ -17,7 +17,8 @@ if (!mysql_query($sql,$con))
   {
   die('Error: ' . mysql_error());
   }
-echo "1 record added";
+//echo "1 record added";
+  header("Location: index.html")
  
 mysql_close($con)
 ?>
