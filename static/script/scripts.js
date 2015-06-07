@@ -2,8 +2,11 @@ $( document ).ready(init);
 
 function init(){
 	$('#mailsubmit').click(function() {
-		alert($('.RegBar-inputMail').val());
-		$.post("mail.php",{email: juan});
+		alert($('.RegBar-inputMail').text());
+		var posting=$.post("mail.php",{email: juan});
+		posting.done(function() {
+			alert("adio");
+		});
 		console.log("holi");
 	})
 	$('#RegContainer').click(function(event) {
