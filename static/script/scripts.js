@@ -51,7 +51,7 @@ function formEmail (email) {
 		     $('.success').toggleClass('visible');
 		     window.setTimeout(function(event) {
 		     	$('success').removeClass('visible');
-		     })
+		     },2000)
 		    },
 		    error: function() {
 		    	console.log("Error");

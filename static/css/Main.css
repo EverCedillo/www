@@ -255,11 +255,11 @@ html,body{
 	padding-top: 3rem;
 }
 
-.succes{
+.success{
 	display: none;
 	padding: .2rem;
 }
-.succes.visible{
+.success.visible{
 	display: block;
 }
 
