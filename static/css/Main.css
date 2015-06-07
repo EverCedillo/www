@@ -232,6 +232,10 @@ html,body{
 .rrss{
 	padding: 0 .4em 0 0;
 }
+.rrss-link, .rrss-link:hover, .rrss-link:visited{
+	text-decoration: none;
+	color: white;
+}
 .footer-message{
 	background: rgb(62, 7, 71);
 	margin-top: 1rem;
