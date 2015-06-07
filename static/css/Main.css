@@ -203,6 +203,7 @@ html,body{
 	background: #5D0E68;
 	color: white;
 	text-align: center;
+	position: relative;
 }
 
 .footer-list{
@@ -387,12 +388,25 @@ Media Queries*/
 		margin-bottom: 0.9rem;
 	}
 	.footer-list{
-		padding: 0;
+		padding: 0 1rem;
+	}
+
+	.footer-message{
+		margin-top: 5rem;
 	}
 	.footer-item:nth-child(2){
-		width: auto;
-		margin-left: 1.5rem;
+		width: 100px;
+		top: 4.3rem;
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
 	}
+	.footer-item:nth-child(3){
+		text-align: right;
+	}
+
 }
 /*
 @media (max-width: 600px) {
