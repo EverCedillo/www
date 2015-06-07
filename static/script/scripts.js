@@ -66,7 +66,7 @@ function formEmail (email) {
 
 function testDB() {
 	$("#mailsubmit").click(function() {
-		var email = $("#emailIA").val();
+		var email = $("#emailI").val();
 	  	var dataString = 'email_ohana='+ email;
 	  //alert (dataString);return false;
 	  	$.ajax({
