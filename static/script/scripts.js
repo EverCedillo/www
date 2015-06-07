@@ -76,6 +76,11 @@ function populateDB1() {
 	    	data: dataString,
 	    	success: function() {
 	    		console.log(":)")
+	    		console.log("success");
+		     	$('.success').toggleClass('visible');
+		     	window.setTimeout(function(event) {
+		     		$('success').removeClass('visible');
+		     	},2000)
 	    	}
 	  	});
 	  	return false;
