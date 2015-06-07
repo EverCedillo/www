@@ -34,7 +34,7 @@ function formEmail () {
 		  //alert (dataString);return false;
 		  $.ajax({
 		    type: "POST",
-		    url: "email.php",
+		    url: "bin/email.php",
 		    data: dataString,
 		    success: function() {
 		     console.log("success");
