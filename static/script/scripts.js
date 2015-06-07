@@ -2,7 +2,7 @@ $( document ).ready(init);
 
 function init(){
 
-	formEmail();
+	subm();
 	$('#RegContainer').click(function(event) {
 		event.stopPropagation();
 	})
@@ -26,11 +26,21 @@ function init(){
 	});
 
 }
-function formEmail () {
+
+function subm () {
 	$('#mailsubmit').click(function(event) {
 		var email = $('#emailI').val();
+		formEmail(email);
+	});
+	$('#mailsubmitA').click(function(event) {
+		var email = $('#emailIA').val();
+		formEmail(email);
+	})
+}
+
+function formEmail (email) {
 		var dataString = 'email_ohana='+ email;
-		alert(email);
+		//alert(email);
 		  //alert (dataString);return false;
 		  $.ajax({
 		    type: "GET",
@@ -38,13 +48,16 @@ function formEmail () {
 		    data: dataString,
 		    success: function() {
 		     console.log("success");
+		     $('.success').toggleClass('visible');
+		     window.setTimeout(function(event) {
+		     	$('success').removeClass('visible');
+		     })
 		    },
 		    error: function() {
 		    	console.log("Error");
 		    }
 		  });
 		  return false;
-	});
 }
 
 $(window).scroll(function(event) {

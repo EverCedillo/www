@@ -255,7 +255,13 @@ html,body{
 	padding-top: 3rem;
 }
 
-
+.succes{
+	display: none;
+	padding: .2rem;
+}
+.succes.visible{
+	display: block;
+}
 
 
 .prpl{
