@@ -10,7 +10,7 @@ if (!$con)
   }
  
 mysql_select_db("web", $con);
-$sql = "INSERT INTO 'ohana_mailing.TOH001_MAIL_LIST' ('NB_MAIL') VALUES ('$_POST[email]');";
+$sql = "INSERT INTO 'ohana_mailing'.'TOH001_MAIL_LIST' ('NB_MAIL') VALUES ('$_POST[email]');";
 
  
 if (!mysql_query($sql,$con))
