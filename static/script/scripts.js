@@ -29,7 +29,7 @@ function init(){
 function formEmail () {
 	$('#mailsubmit').click(function(event) {
 		var email = $('#emailI').val();
-		var dataString = 'email='+ name;
+		var dataString = 'email_ohana='+ name;
 		alert(email);
 		  //alert (dataString);return false;
 		  $.ajax({
