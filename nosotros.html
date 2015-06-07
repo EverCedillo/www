@@ -104,10 +104,9 @@
 	<div id="RegBar">
 		<p class="RegBar-text">Regístrate y mantente conectado</p>
 		<form class="RegBar-form">
-			<input type="text" placeholder="Correo" class="RegBar-inputMail">
-			<input type="submit" value="Registrarme" class="RegBar-btn">
+			<input type="text" placeholder="Correo" class="RegBar-inputMail" name="email_ohana" id="#emailIA">
+			<input type="submit" value="Registrarme" class="RegBar-btn" id="#mailsubmitA" >
 		</form>
-		<div class="succes">Gracias, pronto recibirás más información</div>
 
 	</div>
 		<footer id="Footer">
@@ -142,10 +141,9 @@
 	<div id="Modal-pane">
 		<div id="RegContainer">
 			<p class="Modal-text">Regístrate</p>
-			<form class="RegBar-form">
-			<input type="text" placeholder="Correo" class="RegBar-inputMail" name="email_ohana">
-			<input type="submit" value="Registrarme" class="RegBar-btn">
-			<div class="succes">Gracias, pronto recibirás más información</div>
+			<form class="RegBar-form" ><!--method='POST' action='mail.php'-->
+			<input type="text" placeholder="Correo" class="RegBar-inputMail" name="email_ohana" id="emailI">
+			<input type="submit" value="Registrarme" class="RegBar-btn" id="mailsubmit">
 		</form>
 		</div>
 	</div>

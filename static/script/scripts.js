@@ -3,7 +3,8 @@ $( document ).ready(init);
 function init(){
 
 	//subm();
-	testDB();
+	populateDB1();
+	populateDB2();
 	$('#RegContainer').click(function(event) {
 		event.stopPropagation();
 	})
@@ -64,9 +65,25 @@ function formEmail (email) {
 }
 */
 
-function testDB() {
+function populateDB1() {
 	$("#mailsubmit").click(function() {
 		var email = $("#emailI").val();
+	  	var dataString = 'email_ohana='+ email;
+	  //alert (dataString);return false;
+	  	$.ajax({
+	    	type: "POST",
+	    	url: "mail.php",
+	    	data: dataString,
+	    	success: function() {
+	    		console.log(":)")
+	    	}
+	  	});
+	  	return false;
+	  	});
+}
+function populateDB2() {
+	$("#mailsubmitA").click(function() {
+		var email = $("#emailIA").val();
 	  	var dataString = 'email_ohana='+ email;
 	  //alert (dataString);return false;
 	  	$.ajax({
