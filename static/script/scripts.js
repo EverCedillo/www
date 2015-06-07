@@ -6,11 +6,7 @@ function init(){
     	return 'Your own message goes here...';
 	});*
 	fadeinShow();*/
-	
-
-}
-
-$('#RegContainer').click(function(event) {
+	$('#RegContainer').click(function(event) {
 		event.stopPropagation();
 	})
 	$('html').click(function() {
@@ -32,7 +28,7 @@ $('#RegContainer').click(function(event) {
 	    }
 	});
 
-
+}
 $(window).scroll(function(event) {
 	if($(window).scrollTop()==0){
 		$('.logo-container').removeClass('visible');
