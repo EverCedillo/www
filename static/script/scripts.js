@@ -29,11 +29,11 @@ function init(){
 function formEmail () {
 	$('#mailsubmit').click(function(event) {
 		var email = $('#emailI').val();
-		var dataString = 'email_ohana='+ name;
+		var dataString = 'email_ohana='+ email;
 		alert(email);
 		  //alert (dataString);return false;
 		  $.ajax({
-		    type: "POST",
+		    type: "GET",
 		    url: "bin/email.php",
 		    data: dataString,
 		    success: function() {
