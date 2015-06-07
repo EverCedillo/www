@@ -80,7 +80,7 @@ function populateDB1() {
 		     	$('.success').toggleClass('visible');
 		     	window.setTimeout(function(event) {
 		     		$('.success').removeClass('visible');
-		     	},2000)
+		     	},2000);
 	    	}
 	  	});
 	  	return false;
