@@ -79,7 +79,7 @@ function populateDB1() {
 	    		console.log("success");
 		     	$('.success').toggleClass('visible');
 		     	window.setTimeout(function(event) {
-		     		$('success').removeClass('visible');
+		     		$('.success').removeClass('visible');
 		     	},2000)
 	    	}
 	  	});
