@@ -11,7 +11,7 @@ if (!$con)
  
 mysql_select_db("web", $con);
 $sql = "INSERT INTO ohana_mailing.TOH001_MAIL_LIST ('NB_MAIL') VALUES ('$_POST[email]')";
-
+$sql = "INSERT INTO `ohana_mailing`.`TOH001_MAIL_LIST` (`CD_INTERESADO`, `NB_MAIL`, `TM_STAMP`) VALUES (NULL, '$_POST[email]', CURRENT_TIMESTAMP);";
  
 if (!mysql_query($sql,$con))
   {
