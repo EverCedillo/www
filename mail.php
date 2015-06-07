@@ -3,7 +3,7 @@
  
  
 <?php
-$con = mysql_connect("ohana_mailing.localhost","web","ohana_psw");
+$con = mysql_connect("localhost","web","ohana_psw");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
