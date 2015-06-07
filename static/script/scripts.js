@@ -1,7 +1,9 @@
 $( document ).ready(init);
 
 function init(){
-
+	$('#mailsubmit').click(function() {
+		$.post("mail.php",{email: $('.RegBar-inputMail').val()});
+	})
 	$('#RegContainer').click(function(event) {
 		event.stopPropagation();
 	})
