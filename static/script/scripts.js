@@ -1,6 +1,9 @@
 $( document ).ready(init);
 
-function init(){
+function init()
+	$('.RegBar-form').submit(function(event) {
+		event.preventDefault();
+	});
 	$('#mailsubmit').click(function() {
 		alert($('.RegBar-inputMail').text());
 		var posting=$.post("mail.php",{email: juan});
