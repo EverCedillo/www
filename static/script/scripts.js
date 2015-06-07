@@ -2,7 +2,7 @@ $( document ).ready(init);
 
 function init(){
 
-	subm();
+	//subm();
 	testDB();
 	$('#RegContainer').click(function(event) {
 		event.stopPropagation();
