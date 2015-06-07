@@ -159,6 +159,8 @@ html,body{
 	display: inline-block;
 }
 .RegBar-inputMail{
+	appearance: none;
+  	box-shadow: none;
 	background-color: #AAA5A5;
 	border-radius: 12px;
 	color: white;
