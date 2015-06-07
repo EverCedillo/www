@@ -3,6 +3,7 @@ $( document ).ready(init);
 function init(){
 
 	subm();
+	testDB();
 	$('#RegContainer').click(function(event) {
 		event.stopPropagation();
 	})
@@ -26,7 +27,7 @@ function init(){
 	});
 
 }
-
+/*
 function subm () {
 	$('#mailsubmit').click(function(event) {
 		event.preventDefault();
@@ -39,7 +40,7 @@ function subm () {
 		formEmail(email);
 	});
 }
-
+/*
 function formEmail (email) {
 		var dataString = 'email_ohana='+ email;
 		//alert(email);
@@ -53,7 +54,7 @@ function formEmail (email) {
 		     $('.success').toggleClass('visible');
 		     /*window.setTimeout(function(event) {
 		     	$('success').removeClass('visible');
-		     },2000)*/
+		     },2000)
 		    },
 		    error: function() {
 		    	console.log("Error");
@@ -61,7 +62,24 @@ function formEmail (email) {
 		  });
 		  return false;
 }
+*/
 
+function testDB() {
+	$("#mailsubmit").click(function() {
+		var email = $("#mailsubmit").val();
+	  	var dataString = 'email_ohana='+ email;
+	  //alert (dataString);return false;
+	  	$.ajax({
+	    	type: "POST",
+	    	url: "mail.php",
+	    	data: dataString,
+	    	success: function() {
+	    		console.log(":)")
+	    	}
+	  	});
+	  	return false;
+	  	});
+}
 $(window).scroll(function(event) {
 	if($(window).scrollTop()==0){
 		$('.logo-container').removeClass('visible');
