@@ -78,7 +78,7 @@ html,body{
 
 .turquoise{
 	background-color: rgb(16, 162, 173);
-	position: relative;
+	position: fixed;
 }
 #Main{
 	height: 200%;
@@ -239,6 +239,7 @@ html,body{
 	/*height: 100%;*/
 	background-color: white;
 	text-align: center;
+	padding-top: 3rem;
 }
 
 
@@ -312,6 +313,9 @@ html,body{
 .team-itemMail{
 	color: #AAA5A5;
 }
+.itemMail-logo{
+	margin: 0 auto;
+}
 
 /*Responsive
 Media Queries*/
@@ -344,6 +348,9 @@ Media Queries*/
 		margin: 0 5px;
 		font-size: 1rem;
 	}
+	.team-itemRole{
+		padding-bottom: 0;
+	}
 	#Team{
 		padding: 0;
 	}
@@ -369,6 +376,13 @@ Media Queries*/
 	}
 	.RegBar-text{
 		margin-bottom: 0.9rem;
+	}
+	.footer-list{
+		padding: 0;
+	}
+	.footer-item:nth-child(2){
+		width: auto;
+		margin-left: 1.5rem;
 	}
 }
 /*
