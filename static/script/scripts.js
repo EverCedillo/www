@@ -2,6 +2,7 @@ $( document ).ready(init);
 
 function init(){
 
+	formEmail();
 	$('#RegContainer').click(function(event) {
 		event.stopPropagation();
 	})
@@ -25,6 +26,27 @@ function init(){
 	});
 
 }
+function formEmail () {
+	$('#mailsubmit').click(function(event) {
+		var email = $('#emailI').val();
+		var dataString = 'email='+ name;
+		alert(email);
+		  //alert (dataString);return false;
+		  $.ajax({
+		    type: "POST",
+		    url: "email.php",
+		    data: dataString,
+		    success: function() {
+		     console.log("success");
+		    },
+		    error: function() {
+		    	console.log("Error");
+		    }
+		  });
+		  return false;
+	});
+}
+
 $(window).scroll(function(event) {
 	if($(window).scrollTop()==0){
 		$('.logo-container').removeClass('visible');

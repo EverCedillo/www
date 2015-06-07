@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/Main.css">
 	<link rel="shortcut icon" href="images/favicon.ico"/>
-	
+
 </head>
 <body>
 	<header id="Header">
@@ -82,7 +82,7 @@
 					Contáctanos
 				</div>
 				<div class="footer-content">
-					<i class="fa fa-envelope-o fa-lg"><p class="mail">contacto@ohanahome.mx</p></i>
+					<a href="mailto:contacto@ohanahome.mx" class="link"><i class="fa fa-envelope-o fa-lg"><p class="mail">contacto@ohanahome.mx</p></i></a>
 				</div>
 			</li>
 			<li class="footer-item">
@@ -90,9 +90,9 @@
 					Redes Sociales
 				</div>
 				<div class="footer-content">
-					<a href="https://www.facebook.com/pages/Ohana-Home/452612924898290" class="rrss-link"><i class="fa fa-facebook-square fa-2x rrss"></i></a>
-					<a href="https://plus.google.com/b/110792197417140666262/110792197417140666262/posts" class="rrss-link"><i class="fa fa-google-plus-square fa-2x rrss"></i></a>
-					<a href="https://twitter.com/MyOhanaHome" class="rrss-link"><i class="fa fa-twitter-square fa-2x rrss"></i></a>
+					<a href="https://www.facebook.com/pages/Ohana-Home/452612924898290" class="rrss-link" target="_BLANK"><i class="fa fa-facebook-square fa-2x rrss"></i></a>
+					<a href="https://plus.google.com/b/110792197417140666262/110792197417140666262/posts" class="rrss-link" target="_BLANK"><i class="fa fa-google-plus-square fa-2x rrss"></i></a>
+					<a href="https://twitter.com/MyOhanaHome" class="rrss-link" target="_BLANK"><i class="fa fa-twitter-square fa-2x rrss"></i></a>
 				</div>
 			</li>
 			<li class="footer-item">
@@ -105,9 +105,9 @@
 	</footer>
 		<div id="Modal-pane">
 		<div id="RegContainer">
-			<p class="Modal-text">Registrate</p>
-			<form class="RegBar-form" method='POST' action='mail.php'>
-			<input type="text" placeholder="Correo" class="RegBar-inputMail" name="email">
+			<p class="Modal-text">Regístrate</p>
+			<form class="RegBar-form" ><!--method='POST' action='mail.php'-->
+			<input type="text" placeholder="Correo" class="RegBar-inputMail" name="email_ohana" id="emailI">
 			<input type="submit" value="Registrarme" class="RegBar-btn" id="mailsubmit">
 		</form>
 		</div>

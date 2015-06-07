@@ -211,6 +211,10 @@ html,body{
 	margin: 0;
 	text-align: left;
 }
+.link, .link:hover, .link:visited{
+	color: white;
+	text-decoration: none;
+}
 .footer-item{
 	vertical-align: top;
 	width: 33%;
