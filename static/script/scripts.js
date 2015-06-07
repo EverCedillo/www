@@ -29,13 +29,15 @@ function init(){
 
 function subm () {
 	$('#mailsubmit').click(function(event) {
+		event.preventDefault();
 		var email = $('#emailI').val();
 		formEmail(email);
 	});
 	$('#mailsubmitA').click(function(event) {
+		event.preventDefault();
 		var email = $('#emailIA').val();
 		formEmail(email);
-	})
+	});
 }
 
 function formEmail (email) {
