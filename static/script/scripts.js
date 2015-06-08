@@ -14,6 +14,7 @@ function init(){
 	});
 	$('#ModalReg').on('click',function(event) {
 		$('#Modal-pane').toggleClass('visible');
+		$('#emailI').focus();
 		event.stopPropagation();
 	});
 	$('.slide-link').on('click',function(event) {
@@ -77,10 +78,12 @@ function populateDB1() {
 	    	success: function() {
 	    		console.log(":)")
 	    		console.log("success");
+	    		$("#emailI").val("");
 		     	$('.success').toggleClass('visible');
 		     	window.setTimeout(function(event) {
 		     		$('.success').removeClass('visible');
 		     	},2000);
+
 	    	}
 	  	});
 	  	return false;
@@ -98,6 +101,7 @@ function populateDB2() {
 	    	success: function() {
 	    		console.log(":)")
 	    		console.log("success");
+	    		$("#emailIA").val("");
 		     	$('.success').toggleClass('visible');
 		     	window.setTimeout(function(event) {
 		     		$('.success').removeClass('visible');

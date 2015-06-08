@@ -276,9 +276,12 @@ html,body{
 	z-index: -1;
 	position: fixed;
 }
-
+.Modal-inner{
+	display: table-cell;
+	vertical-align: middle;
+}
 #Modal-pane.visible{
-	display: block;
+	display: table;
 	z-index: 100;
 	background-color: rgba(0,0,0,0.5);
 	position: fixed;
@@ -287,7 +290,6 @@ html,body{
   	width: 100%;
   	text-align: center;
   	height: 100%;
-  	padding-top: 50%;
   	transition: 1s;
 
 }
@@ -295,7 +297,6 @@ html,body{
 	font-size: 1.875rem;
 }
 #RegContainer{
-	margin-top: 12rem;
 	border-radius: 12px;
 	width: 580px;
 	height: 160px;
