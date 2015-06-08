@@ -1,0 +1,18 @@
+This zip file contains optimized resources for http://ohanahome.mx/. The optimized resources are listed below in the format of: 
+filename: url
+
+Note: We only include up to 10 MB of optimized contents. If the
+optimized contents of your page are larger than 10 MB, we list them in
+this file too, with 'NOT INCLUDED' to indicate those URLs require
+further optimization.
+
+css/normalize.css: http://ohanahome.mx/css/normalize.css
+css/Main.css: http://ohanahome.mx/css/Main.css
+css/font-awesome.min.css: http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
+js/jquery-1.11.2.js: http://ohanahome.mx/script/jquery-1.11.2.js
+js/scripts.js: http://ohanahome.mx/script/scripts.js
+image/logonavbar.png: http://ohanahome.mx/images/logonavbar.png
+image/background1.jpg: http://ohanahome.mx/images/background1.jpg
+image/logoprincipal.png: http://ohanahome.mx/images/logoprincipal.png
+image/background2.jpg: http://ohanahome.mx/images/background2.jpg
+image/background3.jpg: http://ohanahome.mx/images/background3.jpg
