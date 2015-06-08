@@ -1,27 +1,5 @@
-html,body{font-family:'Lato', sans-serif;width:100%;height:100%;background-color:#ddd;}
-#Header{height:100%;}
-.Nav{text-align:right;background:rgba(93, 14, 104, 1);transition:0.5s;height:6rem;width:100%;z-index:1;position:fixed;}
-.onScroll{background:rgba(93, 14, 104, 0.8);height:5.9rem;margin-top:-1rem;}
-#logo{width:160px;margin:0 auto;}
-#Conoce{z-index:0;}
-#Header-menu{color:white;list-style:none;margin:0;font-weight:400;display:inline-block;}
-.Header-menuItem{color:white;display:inline-block;margin:0;}
-.Reg-button{cursor:pointer;width:12rem;height:2rem;transition:0.5s;border-radius:12px;background-color:#10A2AD;margin:30px 70px;padding:8px 0 2px;text-align:center;font-size:1rem;font-weight:400;color:white;}
-.Header-menuLink{text-decoration:none;color:white;}
-.logo-container{display:inline-block;left:1rem;top:0.5rem;position:absolute;visibility:hidden;}
-.logo-container.visible{visibility:visible;}
-.turquoise{background-color:rgb(16, 162, 173);position:fixed;}
-#Main{height:200%;}
-.slide-container, #Conoce{width:100%;height:100%;position:relative;text-align:center;display:block;overflow:hidden;}
-.slide{margin:0;width:100%;height:100%;position:absolute;}
-.slide img{width:100%;}
-#s1{background:#AAA5A5 url("/images/background1.jpg") no-repeat center;background-size:cover;}
 #s2{background:#AAA5A5 url("/images/background2.jpg") no-repeat center;background-position:right;background-size:cover;}
 #s3{background:#AAA5A5 url("/images/background3.jpg") no-repeat center;background-size:cover;}
-.slide-title{margin-top:8rem;font-size:3.75rem;margin-bottom:0.1em;}
-.esp{margin-top:1rem;}
-.slide-text{margin:0;color:white;padding:4em 4em 0 4em;font-size:2.5em;position:relative;text-shadow:2px 2px 6px #000000;}
-.arrow{color:white;text-shadow:0 0 9px black;}
 #RegBar{background:white;text-align:center;height:2rem;vertical-align:top;padding:2rem 0;}
 .RegBar-text{color:#AAA5A5;font-weight:400;font-size:1.25rem;margin:2px 12px;display:inline-block;}
 .RegBar-form{display:inline-block;}
