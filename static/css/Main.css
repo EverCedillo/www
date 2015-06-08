@@ -256,11 +256,15 @@ html,body{
 }
 
 .success{
+	transition:1s;
 	display: none;
 	padding: .2rem;
+	color: white;
 }
 .success.visible{
 	display: block;
+	color: #AAA5A5;
+	font-weight: 600;
 }
 
 
@@ -324,8 +328,8 @@ html,body{
 	margin:0;
 }
 .team-item{
-	display: inline-block;
-	width: 15%;
+	display: inline;
+	position: relative;
 	padding: 1rem;
 	vertical-align: top;
 } 
@@ -334,6 +338,10 @@ html,body{
 }
 .itemMail-logo{
 	margin: 0 auto;
+}
+.item-inner{
+	display: inline-block;
+	width: 14rem;
 }
 
 /*Responsive
