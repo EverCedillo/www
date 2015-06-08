@@ -1,5 +1,7 @@
 $(document).ready(init);function init(){
                 $("head").append($("<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700' type='text/css' media='screen' />"));
+                $("head").append($("<link rel='stylesheet' href='css/normalize.css' type='text/css' media='screen' />"));
+                $("head").append($("<link rel='stylesheet' href='css/Main.css' media='screen' />"));
                 $("head").append($("<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' type='text/css' media='screen' />"));
             populateDB1();populateDB2();$('#RegContainer').click(function(event){event.stopPropagation();})
 $('html').click(function(){$('#Modal-pane').removeClass('visible');});$('#ModalReg').on('click',function(event){$('#Modal-pane').toggleClass('visible');$('#emailI').focus();event.stopPropagation();});$('.slide-link').on('click',function(event){var target=$($(this).attr('href'));console.log($(window).scrollTop())
