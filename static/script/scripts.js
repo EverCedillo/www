@@ -1,5 +1,11 @@
 $(document).ready(init);function init(){
-	            if (document.createStyleSheet){document.createStyleSheet('css/normalize.css');}else {$("head").append($("<link rel='stylesheet' href='css/normalize.css' type='text/css' media='screen' />"));
+	            if (document.createStyleSheet){
+                document.createStyleSheet('css/normalize.css');
+                document.createStyleSheet('css/Main.css');
+            }
+            else {
+                $("head").append($("<link rel='stylesheet' href='css/normalize.css' type='text/css' media='screen' />"));
+                $("head").append($("<link rel='stylesheet' href='css/Main.css' type='text/css' media='screen' />"));
             }populateDB1();populateDB2();$('#RegContainer').click(function(event){event.stopPropagation();})
 $('html').click(function(){$('#Modal-pane').removeClass('visible');});$('#ModalReg').on('click',function(event){$('#Modal-pane').toggleClass('visible');$('#emailI').focus();event.stopPropagation();});$('.slide-link').on('click',function(event){var target=$($(this).attr('href'));console.log($(window).scrollTop())
 if(target.length){event.preventDefault();$('html, body').animate({scrollTop:target.offset().top},1300);}});}function populateDB1(){$("#mailsubmit").click(function(){var email=$("#emailI").val();var dataString='email_ohana='+email;$.ajax({type:"POST",url:"mail.php",data:dataString,success:function(){console.log(":)")
