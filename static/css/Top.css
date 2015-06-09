@@ -1,6 +1,6 @@
 html,body{font-family:'Lato', sans-serif;width:100%;height:100%;background-color:#ddd;}
 #Header{height:100%;}
-.Nav{text-align:right;background:rgba(93, 14, 104, 1);transition:0.5s;height:6rem;width:100%;z-index:1;position:fixed;}
+.Nav{text-align:right;background:rgba(93, 14, 104, 1);transition:0.5s;top:0;left:0;height:6rem;width:100%;z-index:1;position:fixed;}
 .onScroll{background:rgba(93, 14, 104, 0.8);height:5.9rem;margin-top:-1rem;}
 #logo{width:160px;margin:0 auto;}
 #Conoce{z-index:0;}
