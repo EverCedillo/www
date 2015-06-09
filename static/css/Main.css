@@ -10,11 +10,13 @@
 ::-moz-placeholder{color:white;}
 :-ms-input-placeholder{color:white;}
 #Footer{background:#5D0E68;color:white;text-align:center;position:relative;}
-.footer-list{list-style:none;margin:0;text-align:left;}
+.footer-list{list-style:none;margin:0;text-align:left; padding: 0 2.5rem;}
 .link, .link:hover, .link:visited{color:white;text-decoration:none;}
 .footer-item{vertical-align:top;width:33%;display:inline-block;}
 .footer-title{display:inline-block;font-size:1.1em;margin:0.9em auto 1.2em auto;}
 .footer-content{display:block;}
+.footer-item:nth-child(2){text-align: center;}
+.footer-item:nth-child(3){text-align:right;}
 .mail{font-size:.75em;display:inline-block;margin:.5em;}
 .rrss{padding:0 .2em;}
 .rrss-link, .rrss-link:hover, .rrss-link:visited{text-decoration:none;color:white;height: 100%}
