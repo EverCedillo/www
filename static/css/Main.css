@@ -5,6 +5,7 @@
 .RegBar-form{display:inline-block;}
 .RegBar-inputMail{box-shadow:none;background-color:#AAA5A5;border-radius:12px;color:white;border:0;width:18.75rem;margin:2px;padding:3px 0 3px 10px;height:1.2rem;}
 .RegBar-btn{box-shadow:none;border:0;width:8.125rem;height:1.875rem;border-radius:12px;background-color:#10A2AD;text-align:center;font-size:1rem;font-weight:400;color:white;}
+.RegBar-btn:hover{background-color:#10A20F;transition:0.5s; }
 ::-webkit-input-placeholder{color:white;}
 :-moz-placeholder{color:white;}
 ::-moz-placeholder{color:white;}
