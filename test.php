@@ -1,7 +1,7 @@
 <?php
 	$data = [  
    {  
-      "title":"Leu00f3n",
+      "title":"Leu00f3n d",
       "data":"El leu00f3n (Panthera leo) es un mamu00edfero carnu00edvoro ...",
       "foot":"leon"
    },
