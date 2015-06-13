@@ -1,8 +1,8 @@
 <?php
 	$data = '[{  
-      "title":"Leu00f3n d",
-      "data":"El leu00f3n (Panthera leo) es un mamu00edfero carnu00edvoro ...",
-      "foot":"leon"
+      "title":"León",
+      "data":"El león (Panthera leo) es un mamífero carnívoro ...",
+      "foot":"-leon-"
    },
    {  
       "title":"Elefante",
