@@ -1,6 +1,5 @@
 <?php
-	$data = [  
-   {  
+	$data = '[{  
       "title":"Leu00f3n d",
       "data":"El leu00f3n (Panthera leo) es un mamu00edfero carnu00edvoro ...",
       "foot":"leon"
@@ -15,7 +14,7 @@
       "data":"Los crocodu00edlidos (Crocodylidae) son una familia de sauru00f3psidos ...",
       "foot":"cocodrilo"
    }
-];
+]';
 
 header('Content-Type: application/json');
 echo $data;
