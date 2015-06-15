@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>Ohana Home</title>
 	
 	<!--link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'-->
 	<!--link rel="stylesheet" type="text/css" href="css/normalize.css"-->
 </head>
 <body>
-	<header id="Header">
-		<nav class="Nav">
+<nav class="Nav turquoise">
 			<ul id="Header-menu">
 				<li class="Header-menuItem">
 					<figure class="logo-container">
@@ -19,60 +17,103 @@
 					</figure>
 				</li>
 				<li class="Header-menuItem">
-					<a href="/nosotros" class="Header-menuLink">Nosotros</a>
+					<a href="/" class="Header-menuLink">Conoce</a>
 				</li>
 				<li class="Header-menuItem">
-					<div id="ModalReg" class="Reg-button">Registrarse</div>
+					<div id="ModalReg" class="Reg-button prpl">Registrarse</div>
 				</li>
 			</ul>
 		</nav>
-
-		<div id="Conoce">
-
-			<div class="slide" id="s1">	
-			
-			</div>
-
-			<div class="slide-text">
-				<div id="logo">
-				<img src="images/logoprincipal.png" alt="">
-			</div>
-				<h2 class="slide-title esp">"Complementamos tu hogar"</h2>
-				Un sistema de administración para la familia
-			</div>
-			<a href="#s2" class="slide-link"><i class="fa fa-chevron-down arrow fa-lg"></i></a>
-		</div>
-	</header>
-
-		<div class="slide-container">
-			<div class="slide" id="s2">	
-				
-			</div>
-			<div class="slide-text">
-				<h2 class="slide-title">"Conecta y administra"</h2>
-				Complementa las necesidades indivivuales de tu familia
-			</div>
-			<a href="#s3" class="slide-link"><i class="fa fa-chevron-down arrow fa-lg"></i></a>
-		</div>
-		<div class="slide-container">
-			<div class="slide" id="s3">	
-				
-			</div>
-			<div class="slide-text">
-				<h2 class="slide-title">
-				"Tu hogar nunca estuvo tan completo"</h2>
-			</div>
-			<a href="#RegBar" class="slide-link"><i class="fa fa-chevron-down arrow fa-lg"></i></a>
-		</div>
+	<div id="Nosotros">
+		<h2 id="Title-team">Ohana Team</h2>
+		<!--ul id="Team"-->
+			<li class="team-item">
+				<div class="item-inner">
+				<figure>
+					<img src="/images/ernesto.png">
+				</figure>
+				<div class="team-itemName">Ernesto J. Silva</div>
+				<div class="team-itemRole">Founder Operations & Logistics Manager</div>
+				<div class="team-itemMail">
+					<figure class='itemMail-logo'>
+					
+					<img src="/images/emailperfil.png" alt="email-logo">
+				</figure>
+					<p class='itenMail-mail'>esilva@ohanahome.mx</p>
+				</div></div>
+			</li>
+			<li class="team-item">
+				<div class="item-inner">
+				<figure>
+					<img src="/images/cesar.png">
+				</figure>
+				<div class="team-itemName">Cesar Islas</div>
+				<div class="team-itemRole">Project Manager</div>
+				<div class="team-itemMail">
+					<figure class='itemMail-logo'>
+					
+					<img src="/images/emailperfil.png" alt="email-logo">
+				</figure>
+					<p class='itenMail-mail'>cislas@ohanahome.mx</p>
+				</div></div>
+			</li>
+			<li class="team-item">
+				<div class="item-inner">
+				<figure>
+					<img src="/images/jesus.png">
+				</figure>
+				<div class="team-itemName">Jesús Cedillo</div>
+				<div class="team-itemRole">Back/Front-end Developer</div>
+				<div class="team-itemMail">
+					<figure class='itemMail-logo'>
+					
+					<img src="/images/emailperfil.png" alt="email-logo">
+				</figure>
+						<p class='itenMail-mail'>j.cedillo@ohanahome.mx</p>
+				</div></div>
+			</li>
+			<li class="team-item">
+				<div class="item-inner">
+				<figure>
+					<img src="/images/luis.png">
+				</figure>
+				<div class="team-itemName">Luis Comonfort</div>
+				<div class="team-itemRole">Back/Front-end Developer</div>
+				<div class="team-itemMail">
+					<figure class='itemMail-logo'>
+					
+					<img src="/images/emailperfil.png" alt="email-logo">
+				</figure>
+					<p class='itenMail-mail'>comonfort@ohanahome.mx</p>
+				</div></div>
+			</li>
+			<li class="team-item">
+				<div class="item-inner">
+				<figure>
+					<img src="/images/lucio.png">
+				</figure>
+				<div class="team-itemName">Lucio Sánchez</div>
+				<div class="team-itemRole">Lead Designer</div>
+				<div class="team-itemMail">
+					<figure class='itemMail-logo'>
+					
+					<img src="/images/emailperfil.png" alt="email-logo">
+				</figure>
+					<p class='itenMail-mail'>lucio@ohanahome.mx</p>
+				</div></div>
+			</li>			
+		<!--/ul-->
+	</div>
 	<div id="RegBar">
 		<p class="RegBar-text">Regístrate y mantente conectado</p>
 		<form class="RegBar-form">
 			<input type="text" placeholder="Correo" class="RegBar-inputMail" name="email_ohana" id="emailIA">
 			<input type="submit" value="Registrarme" class="RegBar-btn" id="mailsubmitA" >
-		</form>
 		<div class="success">Gracias por registrarte</div>
+		</form>
+		
 	</div>
-	<footer id="Footer">
+		<footer id="Footer">
 		<ul class="footer-list">
 
 			<li class="footer-item">
@@ -114,8 +155,6 @@
 	</div>
 	<link rel="stylesheet" type="text/css" href="/css/Top.css">
 	<link rel="shortcut icon" href="/images/favicon.ico"/>
-	<!--link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"-->
-	<!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"-->
 	<script type="text/javascript" src="/script/jquery-1.11.2.js"></script>
 	<script type="text/javascript" src="/script/scripts.js"></script>
 </body>
