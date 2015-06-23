@@ -32,7 +32,7 @@
 #Modal-pane{z-index:-1;position:fixed;}
 .Modal-inner{display:table-cell;vertical-align:middle;}
 #Modal-pane.visible{display:table;z-index:100;background-color:rgba(0,0,0,0.5);position:fixed;bottom:0;left:0;width:100%;text-align:center;height:100%;transition:1s;}
-.Modal-text{font-size: 1.875rem;  background-color: #CCBEBE;  color: white;  margin: 0 0 1.65rem 0;  padding: 1.08rem;  border-radius: 12px 12px 0 0;}
+.Modal-text{font-size: 1.875rem;  background-color: #CCBEBE;  color: white;  margin: 0 0 0.65rem 0;  padding: 1.08rem;  border-radius: 12px 12px 0 0;}
 #RegContainer{border-radius:12px;width:580px;height:160px;display:inline-block;background:#fff;}
 .team-itemName{border-bottom:solid rgb(162, 117, 168) 2px;font-size:1.25rem;font-weight:700;color:rgb(154, 146, 155);}
 .team-itemRole{padding:20px 0;font-weight:300;font-size:1.25rem;color:#AAA5A5;height:3rem;}
