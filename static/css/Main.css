@@ -68,6 +68,7 @@
 @media(min-width:600px) and (max-width:850px){.footer-title{font-size:1.1rem;}
 .mail{font-size:1rem;}
 .slide-title{font-size: 3rem;}
+.slide-text{font-size: 1.5rem;}
 }
 @media (max-width:1000px){.logo-container.visible{margin-left:1rem;width:2rem;left:0.5rem;}
 }
