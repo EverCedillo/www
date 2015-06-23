@@ -25,7 +25,7 @@
 .rrss-link, .rrss-link:hover, .rrss-link:visited{text-decoration:none;color:white;height: 100%}
 .footer-message{background:rgb(62, 7, 71);margin-top:1rem;height:1rem;font-size:.8em;padding:1.5rem 0 1em 0;}
 #Nosotros{background-color:white;text-align:center;padding-top:4rem; padding-bottom: 3rem;}
-.success{transition:1s;display:none;padding:.2rem;color:white;}
+.success{transition:1s;display:none;padding:.2rem;background: white; color:white;}
 .success.visible{display:block;color:#AAA5A5;font-weight:600;}
 .prpl{background:#5D0E68;}
 .prpl:hover{background-color: #6F1572; transition:.2s;}
