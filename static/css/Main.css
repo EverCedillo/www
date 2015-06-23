@@ -1,38 +1,38 @@
 #s2{background:#AAA5A5 url("/images/background2.jpg") no-repeat center;background-position:right;background-size:cover;}
 #s3{background:#AAA5A5 url("/images/background3.jpg") no-repeat center;background-size:cover;}
-#RegBar{background:white;text-align:center;height:auto;vertical-align:top;padding:2rem 0;border-top: 1px solid lightgray;}
+#RegBar{background:white;text-align:center;height:auto;vertical-align:top;padding:2rem 0;border-top:1px solid lightgray;}
 .RegBar-text{color:#AAA5A5;font-weight:400;font-size:1.25rem;margin:2px 12px;display:block;}
 .RegBar-form{display:inline-block;}
-.RegBar-inputMail{box-shadow: none;  border-radius: 12px;  color: gray;  border: 1px lightgray solid;  width: 18.75rem;  margin: 0px 10px;  padding: 3px 0 3px 10px;  height: 2rem;}
+.RegBar-inputMail{box-shadow:none;border-radius:12px;color:gray;border:1px lightgray solid;width:18.75rem;margin:0px 10px;padding:3px 0 3px 10px;height:2rem;}
 .RegBar-btn{box-shadow:none;border:0;width:12rem;height:2rem;border-radius:12px;background-color:#10A2AD;text-align:center;font-size:1rem;font-weight:400;color:white;}
-#mailsubmit, #mailsubmitA{height: 2.4rem; margin: 1rem;}
-.RegBar-btn:hover{background-color:#25AFAF;transition:0.2s; }
+#mailsubmit, #mailsubmitA{height:2.4rem;margin:1rem;}
+.RegBar-btn:hover{background-color:#25AFAF;transition:0.2s;}
 ::-webkit-input-placeholder{color:lightgray;}
 :-moz-placeholder{color:lightgray;}
 ::-moz-placeholder{color:lightgray;}
 :-ms-input-placeholder{color:lightgray;}
-.email-image{vertical-align: middle;}
+.email-image{vertical-align:middle;}
 #Footer{background:#5D0E68;color:white;text-align:center;position:relative;}
-.footer-list{list-style:none;margin:0;text-align:left; padding: 0 2.5rem;}
+.footer-list{list-style:none;margin:0;text-align:left;padding:0 2.5rem;}
 .link, .link:hover, .link:visited{color:white;text-decoration:none;}
 .footer-item{vertical-align:top;width:33%;display:inline-block;}
 .footer-title{display:inline-block;font-size:1.1rem;margin:0.9em auto 1.2em auto;}
 .footer-content{display:block;}
-.footer-item:nth-child(2){text-align: center;}
+.footer-item:nth-child(2){text-align:center;}
 .footer-item:nth-child(3){text-align:right;}
 .mail{font-size:1rem;display:inline-block;margin:.5em;}
 .rrss{padding:0 .2em;}
-.rrss-link, .rrss-link:hover, .rrss-link:visited{text-decoration:none;color:white;height: 100%}
+.rrss-link, .rrss-link:hover, .rrss-link:visited{text-decoration:none;color:white;height:100%}
 .footer-message{background:rgb(62, 7, 71);margin-top:1rem;height:1rem;font-size:.8em;padding:1.5rem 0 1em 0;}
-#Nosotros{background-color:white;text-align:center;padding-top:4rem; padding-bottom: 3rem;}
-.success{transition:1s;padding:.2rem;background: transparent; color:transparent; height: 0;}
-.success.visible{transition:1s; color:#AAA5A5;font-weight:600; background: white; color: gray; height: auto; border-radius: 0 0 12px 12px}
+#Nosotros{background-color:white;text-align:center;padding-top:4rem;padding-bottom:3rem;}
+.success{transition:1s;padding:.2rem;background:transparent;color:transparent;height:0;}
+.success.visible{transition:1s;color:#AAA5A5;font-weight:600;background:white;color:gray;height:auto;border-radius:0 0 12px 12px}
 .prpl{background:#5D0E68;}
-.prpl:hover{background-color: #6F1572; transition:.2s;}
+.prpl:hover{background-color:#6F1572;transition:.2s;}
 #Modal-pane{z-index:-1;position:fixed;}
 .Modal-inner{display:table-cell;vertical-align:middle;}
 #Modal-pane.visible{display:table;z-index:100;background-color:rgba(0,0,0,0.5);position:fixed;bottom:0;left:0;width:100%;text-align:center;height:100%;transition:1s;}
-.Modal-text{font-size: 1.875rem;  background-color: #CCBEBE;  color: white;  margin: 0 0 0.65rem 0;  padding: 1.08rem;  border-radius: 12px 12px 0 0;}
+.Modal-text{font-size:1.875rem;background-color:#CCBEBE;color:white;margin:0 0 0.65rem 0;padding:1.08rem;border-radius:12px 12px 0 0;}
 #RegContainer{border-radius:12px;width:580px;height:160px;display:inline-block;background:#fff;}
 .team-itemName{border-bottom:solid rgb(162, 117, 168) 2px;font-size:1.25rem;font-weight:700;color:rgb(154, 146, 155);}
 .team-itemRole{padding:20px 0;font-weight:300;font-size:1.25rem;color:#AAA5A5;height:3rem;}
@@ -41,12 +41,12 @@
 .team-item{display:inline;position:relative;padding:1rem;vertical-align:top;}
 .team-itemMail{color:#AAA5A5;}
 .itemMail-logo{margin:0 auto;}
-.item-inner{display:inline-block;width:14rem;margin: 2rem;}
+.item-inner{display:inline-block;width:14rem;margin:2rem;}
 @media (max-width:850px){.slide-title{font-size:2rem;margin:0;word-wrap:break-word;}
 .slide-text{padding:5rem 1rem 0;font-size:1rem;margin-top:5rem;}
 .team-item{display:block;margin:auto;width:80%;}
 #Nosotros{text-align:center;}
-#logo-image { width: 160px;}
+#logo-image{width:160px;}
 .footer-item{width:48%;font-size:0.7rem;}
 .Reg-button{width:6rem;margin:0 5px;font-size:1rem;}
 #RegContainer{border-radius:0;width:100%;height:14rem;}
@@ -58,19 +58,15 @@
 .RegBar-text{margin-bottom:0.9rem;}
 .footer-list{padding:0 0.2rem 0 1rem;}
 .footer-message{margin-top:5rem;}
-.rrss{padding: 0 .4rem;}
-.footer-item:nth-child(2){width:250px;text-align: center;bottom:3rem;position:absolute;margin-left:auto;margin-right:auto;left:0;right:0;}
+.rrss{padding:0 .4rem;}
+.footer-item:nth-child(2){width:250px;text-align:center;bottom:3rem;position:absolute;margin-left:auto;margin-right:auto;left:0;right:0;}
 .footer-item:nth-child(3){text-align:right;}
-.RegBar-inputMail{width: 90%;}
-.mail{font-size: .7rem;margin: 0;}
-.footer-title{margin-bottom:0px; }
+.RegBar-inputMail{width:90%;}
+.mail{font-size:.7rem;margin:0;}
+.footer-title{margin-bottom:0px;}
 }
-@media( min-width: 600px) and (max-width: 850px){
-.footer-title{	font-size: 1.1rem;}
-.mail{font-size: 1rem;}
+@media(min-width:600px) and (max-width:850px){.footer-title{font-size:1.1rem;}
+.mail{font-size:1rem;}
 }
-@media (max-width: 1000px){
-	.logo-container.visible{margin-left:1rem;width:2rem;left:0.5rem;}
+@media (max-width:1000px){.logo-container.visible{margin-left:1rem;width:2rem;left:0.5rem;}
 }
-
-/*pading team*/
