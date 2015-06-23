@@ -1,16 +1,18 @@
 html,body{font-family:'Lato', sans-serif;width:100%;height:100%;background-color:#ddd;}
 #Header{height:100%;}
-.Nav{text-align:right;background:rgba(93, 14, 104, 1);transition:0.5s;top:0;left:0;height:6rem;width:100%;z-index:1;position:fixed;}
-.onScroll{background:rgba(93, 14, 104, 0.8);height:5.9rem;margin-top:-1rem;}
-#logo{width:160px;margin:0 auto;}
+.Nav{text-align:right;background:rgba(93, 14, 104, 1);transition:0.5s;top:0;left:0;height:4.375rem;width:100%;z-index:1;position:fixed;}
+.onScroll{background:rgba(93, 14, 104, 0.8);}
+.turquoise.onScroll{background: rgba(16, 162, 173, 0.8)}
+#logo{margin:0 auto;}
+#logo-image{width:260px; text-shadow: 2px 2px 6px #000;}
 #Conoce{z-index:0;}
 #Header-menu{color:white;list-style:none;margin:0;font-weight:400;display:inline-block;}
 .Header-menuItem{color:white;display:inline-block;margin:0;}
-.Reg-button{cursor:pointer;width:12rem;height:2rem;transition:0.5s;border-radius:12px;background-color:#10A2AD;margin:30px 70px;padding:8px 0 2px;text-align:center;font-size:1rem;font-weight:400;color:white;}
+.Reg-button{cursor:pointer;width:12rem;height:2rem;transition:0.5s;border-radius:12px;background-color:#10A2AD;margin:15px 70px;padding:8px 0 2px;text-align:center;font-size:1rem;font-weight:400;color:white;}
 .Reg-button:hover{background-color: #25AFAF; transition:.2s;}
 .Header-menuLink{text-decoration:none;color:white;}
-.logo-container{display:inline-block;left:1rem;top:0.5rem;position:absolute;visibility:hidden;}
-.logo-container.visible{visibility:visible;}
+.logo-container{display:inline-block;left:0;right: 0;top:0.3rem;position:absolute;visibility:hidden;}
+.logo-container.visible{visibility:visible;text-align: center;margin: 0;z-index: -1;}
 .turquoise{background-color:rgb(16, 162, 173);position:fixed;}
 #Main{height:200%;}
 .slide-container, #Conoce{width:100%;height:100%;position:relative;text-align:center;display:block;overflow:hidden;}

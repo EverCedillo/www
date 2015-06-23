@@ -3,13 +3,15 @@
 #RegBar{background:white;text-align:center;height:2rem;vertical-align:top;padding:2rem 0;border-top: 1px solid lightgray;}
 .RegBar-text{color:#AAA5A5;font-weight:400;font-size:1.25rem;margin:2px 12px;display:inline-block;}
 .RegBar-form{display:inline-block;}
-.RegBar-inputMail{box-shadow:none;background-color:#AAA5A5;border-radius:12px;color:white;border:0;width:18.75rem;margin:2px;padding:3px 0 3px 10px;height:1.2rem;}
-.RegBar-btn{box-shadow:none;border:0;width:8.125rem;height:1.875rem;border-radius:12px;background-color:#10A2AD;text-align:center;font-size:1rem;font-weight:400;color:white;}
+.RegBar-inputMail{box-shadow: none;  border-radius: 12px;  color: gray;  border: 1px lightgray solid;  width: 18.75rem;  margin: 0px 10px;  padding: 3px 0 3px 10px;  height: 2rem;}
+.RegBar-btn{box-shadow:none;border:0;width:12rem;height:2rem;border-radius:12px;background-color:#10A2AD;text-align:center;font-size:1rem;font-weight:400;color:white;}
+#mailsubmit, #mailsubmitA{height: 2.4rem;}
 .RegBar-btn:hover{background-color:#25AFAF;transition:0.2s; }
-::-webkit-input-placeholder{color:white;}
-:-moz-placeholder{color:white;}
-::-moz-placeholder{color:white;}
-:-ms-input-placeholder{color:white;}
+::-webkit-input-placeholder{color:lightgray;}
+:-moz-placeholder{color:lightgray;}
+::-moz-placeholder{color:lightgray;}
+:-ms-input-placeholder{color:lightgray;}
+.email-image{vertical-align: middle;}
 #Footer{background:#5D0E68;color:white;text-align:center;position:relative;}
 .footer-list{list-style:none;margin:0;text-align:left; padding: 0 2.5rem;}
 .link, .link:hover, .link:visited{color:white;text-decoration:none;}
@@ -18,7 +20,7 @@
 .footer-content{display:block;}
 .footer-item:nth-child(2){text-align: center;}
 .footer-item:nth-child(3){text-align:right;}
-.mail{font-size:.75em;display:inline-block;margin:.5em;}
+.mail{font-size:1rem;display:inline-block;margin:.5em;}
 .rrss{padding:0 .2em;}
 .rrss-link, .rrss-link:hover, .rrss-link:visited{text-decoration:none;color:white;height: 100%}
 .footer-message{background:rgb(62, 7, 71);margin-top:1rem;height:1rem;font-size:.8em;padding:1.5rem 0 1em 0;}
@@ -30,7 +32,7 @@
 #Modal-pane{z-index:-1;position:fixed;}
 .Modal-inner{display:table-cell;vertical-align:middle;}
 #Modal-pane.visible{display:table;z-index:100;background-color:rgba(0,0,0,0.5);position:fixed;bottom:0;left:0;width:100%;text-align:center;height:100%;transition:1s;}
-.Modal-text{font-size:1.875rem;}
+.Modal-text{font-size: 1.875rem;  background-color: #CCBEBE;  color: white;  margin: 0 0 1.65rem 0;  padding: 1.08rem;  border-radius: 12px 12px 0 0;}
 #RegContainer{border-radius:12px;width:580px;height:160px;display:inline-block;background:#fff;}
 .team-itemName{border-bottom:solid rgb(162, 117, 168) 2px;font-size:1.25rem;font-weight:700;color:rgb(154, 146, 155);}
 .team-itemRole{padding:20px 0;font-weight:300;font-size:1.25rem;color:#AAA5A5;height:3rem;}
@@ -39,7 +41,7 @@
 .team-item{display:inline;position:relative;padding:1rem;vertical-align:top;}
 .team-itemMail{color:#AAA5A5;}
 .itemMail-logo{margin:0 auto;}
-.item-inner{display:inline-block;width:14rem;}
+.item-inner{display:inline-block;width:14rem;margin: 2rem;}
 @media (max-width:600px){.slide-title{font-size:2rem;margin:0;word-wrap:break-word;}
 .slide-text{padding:5rem 1rem 0;font-size:1rem;margin-top:5rem;}
 .team-item{display:block;margin:auto;width:80%;}
