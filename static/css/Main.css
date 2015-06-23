@@ -42,7 +42,7 @@
 .team-itemMail{color:#AAA5A5;}
 .itemMail-logo{margin:0 auto;}
 .item-inner{display:inline-block;width:14rem;margin:2rem;}
-@media (max-width:850px){.slide-title{font-size:2rem;margin:0;word-wrap:break-word;}
+@media (max-width:850px){.slide-title{font-size:2.5rem;margin:0;word-wrap:break-word;}
 .slide-text{padding:5rem 1rem 0;font-size:1rem;margin-top:5rem;}
 .team-item{display:block;margin:auto;width:80%;}
 #Nosotros{text-align:center;}
@@ -67,6 +67,7 @@
 }
 @media(min-width:600px) and (max-width:850px){.footer-title{font-size:1.1rem;}
 .mail{font-size:1rem;}
+.slide-title{font-size: 3rem;}
 }
 @media (max-width:1000px){.logo-container.visible{margin-left:1rem;width:2rem;left:0.5rem;}
 }
