@@ -70,7 +70,6 @@
 .mail{font-size:1rem;}
 .slide-title{font-size: 3rem;}
 .slide-text{font-size: 1.5rem;padding-top: 14rem;}
-
-}
+#logo-image {  width: 220px;}}
 @media (max-width:1000px){.logo-container.visible{margin-left:1rem;width:2rem;left:0.5rem;}
 }
