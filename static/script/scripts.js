@@ -4,7 +4,7 @@ if(target.length){event.preventDefault();$('html, body').animate({scrollTop:targ
 console.log("success");$("#emailI").val("");$('.success').toggleClass('visible');window.setTimeout(function(event){$('.success').removeClass('visible');},2000);}});return false;});}function populateDB2(){$("#mailsubmitA").click(function(){var email=$("#emailIA").val();var dataString='email_ohana='+email;$.ajax({type:"POST",url:"mail.php",data:dataString,success:function(){console.log(":)")
 console.log("success");$("#emailIA").val("");$('.success').toggleClass('visible');window.setTimeout(function(event){$('.success').removeClass('visible');},2000);}});return false;});}$(window).scroll(function(event){if($(window).scrollTop()==0){$('.logo-container').removeClass('visible');$('.Nav').removeClass('onScroll');$('.Reg-button').removeClass('RegBar-btn')}else{if(!($('.Nav').hasClass('onScroll'))){$('.logo-container').toggleClass('visible');$('.Nav').toggleClass('onScroll');$('.Reg-button').toggleClass('RegBar-btn');}}})
 var st=$('.slide-title');
-for(int i=0;i<st.length();i++){
+for(var i=0;i<st.length();i++){
 	st.focus(fade);
 }
 function fade(){
