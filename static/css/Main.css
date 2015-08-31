@@ -24,7 +24,7 @@ input{outline-width: 0;}
 .mail{font-size:1rem;display:inline-block;margin:.5em;}
 .rrss{padding:0 .2em;}
 .rrss-link, .rrss-link:hover, .rrss-link:visited{text-decoration:none;color:white;height:100%}
-.footer-message{background:rgb(62, 7, 71);margin-top:1rem;height:1rem;font-size:.8em;padding:1.5rem 0 1em 0;}
+.footer-message{background:rgb(62, 7, 71);margin-top:1rem;height:1rem;font-size:.6em;padding:1.5rem 0 1em 0;}
 #Nosotros{background-color:white;text-align:center;padding-top:4rem;padding-bottom:3rem;}
 .success{transition:1s;padding:.2rem;background:transparent;color:transparent;height:0;}
 .success.visible{transition:1s;color:#AAA5A5;font-weight:600;background:white;color:gray;height:auto;border-radius:0 0 12px 12px}
