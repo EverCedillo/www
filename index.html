@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<script type="text/javascript" src="/script/jquery-1.11.2.js"></script>
 	<script src="script/wow.js"></script>
               <script>
               new WOW().init();
               </script>
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
 	<title>Ohana Home</title>
 	
 </head>
 <body>
+	<div id="fakeLoader"></div>
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K84743"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -19,6 +21,7 @@
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-K84743');</script>
+	
 	<header id="Header">
 		<nav class="Nav">
 			<ul id="Header-menu">
@@ -57,7 +60,7 @@
 			<div class="slide wow fadeIn" id="s2">	
 				
 			</div>
-			<div class="slide-text wow bounceInUp" data-wow-delay="1s" data-wow-duration=".5s">
+			<div class="slide-text wow bounceInUp" data-wow-delay=".7s" data-wow-duration=".5s">
 				<h2 class="slide-title">"Conecta y administra"</h2>
 				Complementa las necesidades indivivuales de tu familia
 			</div>
@@ -124,10 +127,22 @@
 		<div class="success">Gracias por registrarte</div>
 		</div></div>
 	</div>
+
 	<link rel="stylesheet" type="text/css" href="/css/Top.css">
 	<link rel="shortcut icon" href="/images/favicon.ico"/>
 
-	<script type="text/javascript" src="/script/jquery-1.11.2.js"></script>
+	
 	<script type="text/javascript" src="/script/scripts.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="script/fakeLoader.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".fakeloader").fakeLoader({
+                    timeToHide:1200,
+                    bgColor:"#2ecc71",
+                    spinner:"spinner1"
+                });
+            });
+        </script>
 </body>
 </html>
