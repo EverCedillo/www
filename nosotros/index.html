@@ -8,11 +8,20 @@
               <script>
               new WOW().init();
               </script>
-    <link rel="stylesheet" href="/css/animate.css">
+    
+
+    <link href="/css/introLoader.css" rel="stylesheet">
+		<!-- jQuery, Helpers and jqueryIntrLoader -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="/script/jquery.easing.1.3.js"></script>
+        <script src="/script/spin.min.js"></script>
+        <script src="/script/jquery.introLoader.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/animate.css">
+	</head>
+	<body>
+		<div id="element"></div>
 	
-</head>
-<body>
-	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K84743"
+script><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K84743"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -35,9 +44,9 @@
 			</ul>
 		</nav>
 	<div id="Nosotros">
-		<h2 id="Title-team" class="wow bounceInUp">Ohana Team</h2>
+		<h2 id="Title-team" class="wow fadeIn">Ohana Team</h2>
 		<!--ul id="Team"-->
-			<li class="team-item wow flipInY">
+			<li class="team-item wow flipInY"data-wow-delay="0.5s">
 				<div class="item-inner">
 				<figure>
 					<img src="/images/ernesto.png">
@@ -52,7 +61,7 @@
 					<p class='itenMail-mail'>esilva@ohanahome.mx</p>
 				</div></div>
 			</li>
-			<li class="team-item wow flipInY">
+			<li class="team-item wow flipInY"data-wow-delay="0.5s">
 				<div class="item-inner">
 				<figure>
 					<img src="/images/cesar.png">
@@ -67,12 +76,12 @@
 					<p class='itenMail-mail'>cesar@ohanahome.mx</p>
 				</div></div>
 			</li>
-			<li class="team-item wow flipInY">
+			<li class="team-item wow flipInY"data-wow-delay="0.5s">
 				<div class="item-inner">
 				<figure>
 					<img src="/images/jesus.png">
 				</figure>
-				<div class="team-itemName wow flipInY">Jesús Cedillo</div>
+				<div class="team-itemName wow flipInY"data-wow-delay="0.5s">Jesús Cedillo</div>
 				<div class="team-itemRole">Back/Front-end Developer</div>
 				<div class="team-itemMail">
 					<figure class='itemMail-logo'>
@@ -82,7 +91,7 @@
 						<p class='itenMail-mail'>j.cedillo@ohanahome.mx</p>
 				</div></div>
 			</li>
-			<li class="team-item wow flipInY" >
+			<li class="team-item wow flipInY"data-wow-delay="0.5s" >
 				<div class="item-inner">
 				<figure>
 					<img src="/images/lucio.png">
@@ -97,7 +106,7 @@
 					<p class='itenMail-mail'>lucio@ohanahome.mx</p>
 				</div></div>
 			</li>			
-			<li class="team-item wow flipInY">
+			<li class="team-item wow flipInY"data-wow-delay="0.5s">
 				<div class="item-inner">
 				<figure>
 					<img src="/images/brenda.png">
@@ -169,7 +178,36 @@
 	</div>
 	<link rel="stylesheet" type="text/css" href="/css/Top.css">
 	<link rel="shortcut icon" href="/images/favicon.ico"/>
-	<script type="text/javascript" src="/script/jquery-1.11.2.js"></script>
+	<!--script type="text/javascript" src="/script/jquery-1.11.2.js"></script-->
 	<script type="text/javascript" src="/script/scripts.js"></script>
+	<script>
+			$(document).on('ready', function() {
+				var loader = $("#element").introLoader({
+					animation: {
+                        name: 'simpleLoader',
+                        options: {
+                            effect:'slideUp',
+                            ease: "easeInOutCirc",
+                            style: 'ocean',
+                            delayTime: 1000, //delay time in milliseconds
+                            animationTime: 500
+                            
+                        }
+                    },    
+
+                    spinJs: {
+                        lines: 13, // The number of lines to draw
+                        length: 20, // The length of each line
+                        width: 10, // The line thickness
+                        radius: 30, // The radius of the inner circle
+                        corners: 1, // Corner roundness (0..1)
+                        color: '#fff', // #rgb or #rrggbb or array of colors
+                    }
+				});
+                
+			});
+            
+            
+		</script>
 </body>
 </html>

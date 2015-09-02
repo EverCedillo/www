@@ -54,7 +54,7 @@ body.introLoader_preventScroll {
   background-color: #333333;
 }
 .theme-ocean.introLoader.simpleLoader {
-  background-color: #164761;
+  background-color: rgb(16, 162, 173);
 }
 .theme-forest.introLoader.simpleLoader {
   background-color: #1f3608;
