@@ -16,7 +16,7 @@ $results = $query->find();
 
 for ($i = 0; $i < count($results); $i++) {
   $object = $results[$i];
-  echo $object->getObjectId() . ' - ' . $object->get('playerName');
+  echo $object->getObjectId() . ' - ' . $object->get('data');
 }
 
 
