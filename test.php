@@ -32,4 +32,12 @@ $holi=$_GET["string"];
 header('Content-Type: application/json');
 echo $data;
 echo $holi;
+
+use Parse\ParseObject;
+ 
+$testObject = ParseObject::create("TestObject");
+$testObject->set("foo", "bar");
+$testObject->save();
+
+echo $testObject;
 ?>
