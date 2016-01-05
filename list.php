@@ -12,7 +12,7 @@ $query = new ParseQuery("TestScale");
 
 $query->exists("data");
 
-for ($i = 0; $i < count($results); $i++) {
+for ($i = 0; $i < count($query); $i++) {
   $object = $results[$i];
   echo $object->getObjectId() . ' - ' . $object->get('playerName');
 }
