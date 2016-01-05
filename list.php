@@ -10,10 +10,9 @@ $query = new ParseQuery("TestScale");
 
 $query->exists("data");
 
-foreach ($query as $key) {
-	# code...
-	echo $key->get("data");
-	echo "\n";
+for ($i = 0; $i < count($results); $i++) {
+  $object = $results[$i];
+  echo $object->getObjectId() . ' - ' . $object->get('playerName');
 }
 
 
