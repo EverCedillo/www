@@ -16,8 +16,12 @@ $results = $query->find();
 
 for ($i = 0; $i < count($results); $i++) {
   $object = $results[$i];
-  echo $object->getObjectId() . ' - ' . $object->get('data');
-  echo "<br>";
+  if ($object->get("data")!=null) {
+  	# code...
+  	echo $object->getObjectId() . ' - ' . $object->get('data');
+  	echo "<br>";
+  }
+  
 }
 
 
