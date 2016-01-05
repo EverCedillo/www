@@ -1,4 +1,6 @@
 <?php
+
+$holi=$_GET["string"];
 	$data = '[{  
       "title":"León",
       "data":"El león (Panthera leo) es un mamífero carnívoro ...",
@@ -23,4 +25,5 @@
 
 header('Content-Type: application/json');
 echo $data;
+echo $holi;
 ?>
