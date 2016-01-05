@@ -12,7 +12,7 @@ $query->exists("data");
 
 foreach ($query as $key) {
 	# code...
-	echo $key;
+	echo $key->get("data");
 	echo "\n";
 }
 
