@@ -36,7 +36,7 @@ echo $holi;
 use Parse\ParseObject;
  
 $testObject = ParseObject::create("TestObject");
-$testObject->set("foo", "bar");
+$testObject->set("far", "bar");
 $testObject->save();
 
 echo $testObject;
