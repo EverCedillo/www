@@ -49,6 +49,7 @@ for ($i = 0; $i < count($results); $i++) {
       		var object = results[i];
       	
       		content=content+object.id + ' - ' + object.get('data') + ' - ' object.createdAt.toString() + '<br>';
+      		console.log(object.createdAt);
     	}
     	document.getElementsByTagName('list')[0].innerHTML=content;
   },
