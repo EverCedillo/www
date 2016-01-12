@@ -12,7 +12,7 @@ ParseClient::initialize('Gjy7cLCCl7HcIsLS6myQDIxUvYSdz2ZCVNGHpd8G', 'dtMnemfa8ZL
 
 $query = new ParseQuery("TestScale");
 
-$query->select("data","createdAt");
+$query->select("data");
 $query->descending("updatedAt");
 
 $results = $query->find();
