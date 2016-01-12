@@ -47,9 +47,11 @@ for ($i = 0; $i < count($results); $i++) {
     	// Do something with the returned Parse.Object values
     	for (var i = 0; i < results.length; i++) {
       		var object = results[i];
-      	
+      		var date=object.createdAt;
+      		console.log(date.toString());
       		content=content+object.id + ' - ' + object.get('data') + ' - ' + '<br>';
-      		console.log(object.createdAt);
+      		console.log(date);
+
     	}
     	document.getElementsByTagName('list')[0].innerHTML=content;
   },
