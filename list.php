@@ -23,7 +23,7 @@ for ($i = 0; $i < count($results); $i++) {
   if ($object->get("data")!=null) {
   	# code...
   	
-  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '. $object->getUpdatedAt();
+  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '. $object->get('data');
   	echo "<br>";
   	
   }
