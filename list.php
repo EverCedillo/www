@@ -49,7 +49,8 @@ for ($i = 0; $i < count($results); $i++) {
       		var object = results[i];
       		var date=object.createdAt;
       		console.log(date.toString());
-      		content=content+object.id + ' - ' + object.get('data') + ' - ' date.toString() + '<br>';
+      		var d=date.toString();
+      		content=content+object.id + ' - ' + object.get('data') + ' - ' d + '<br>';
       		console.log(date);
 
     	}
