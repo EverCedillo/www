@@ -2,7 +2,7 @@
 <?php
 require 'vendor/autoload.php';
 
-header("refresh: 10;");
+header("refresh: 40;");
  
 use Parse\ParseClient;
 use Parse\ParseObject;
