@@ -24,7 +24,7 @@ for ($i = 0; $i < count($results); $i++) {
   	try{
   	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '. $object->getUpdatedAt();
   	echo "<br>";
-  	}catch(ParseException $error) {
+  	}catch(Exception $error) {
   // $error is an instance of ParseException with details about the error.
   echo $error->getCode();
   echo $error->getMessage();
