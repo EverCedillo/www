@@ -12,6 +12,7 @@ ParseClient::initialize('Gjy7cLCCl7HcIsLS6myQDIxUvYSdz2ZCVNGHpd8G', 'dtMnemfa8ZL
 
 $query = new ParseQuery("TestScale");
 
+try{
 $query->exists("data");
 $query->descending("updatedAt");
 
@@ -21,16 +22,17 @@ for ($i = 0; $i < count($results); $i++) {
   $object = $results[$i];
   if ($object->get("data")!=null) {
   	# code...
-  	try{
+  	
   	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '. $object->getUpdatedAt();
   	echo "<br>";
-  	}catch(Exception $error) {
+  	
+  }
+  
+}}
+catch(Exception $error) {
   // $error is an instance of ParseException with details about the error.
   echo $error->getCode();
   echo $error->getMessage();
-}
-  }
-  
 }
 
 
