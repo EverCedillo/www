@@ -50,7 +50,7 @@ for ($i = 0; $i < count($results); $i++) {
       		var date=object.createdAt;
       		console.log(date.toString());
       		var d=date.toString();
-      		content=content+object.id + ' - ' + object.get('data') + ' - ' d + '<br>';
+      		content=content+object.id + ' - ' + object.get('data') + ' - '+ d + '<br>';
       		console.log(date);
 
     	}
