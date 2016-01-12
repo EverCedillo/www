@@ -1,5 +1,7 @@
 <?php
 require 'vendor/autoload.php';
+
+header("refresh: 70;")
  
 use Parse\ParseClient;
 use Parse\ParseObject;
@@ -11,6 +13,7 @@ ParseClient::initialize('Gjy7cLCCl7HcIsLS6myQDIxUvYSdz2ZCVNGHpd8G', 'dtMnemfa8ZL
 $query = new ParseQuery("TestScale");
 
 $query->exists("data");
+$query->ascending("updatedAt");
 
 $results = $query->find();
 
@@ -18,7 +21,7 @@ for ($i = 0; $i < count($results); $i++) {
   $object = $results[$i];
   if ($object->get("data")!=null) {
   	# code...
-  	echo $object->getObjectId() . ' - ' . $object->get('data');
+  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '$object->get('updatedAt');
   	echo "<br>";
   }
   
