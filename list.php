@@ -3,9 +3,17 @@ require 'vendor/autoload.php';
 
 header("refresh: 10;");
  
-use Parse\ParseClient;
 use Parse\ParseObject;
 use Parse\ParseQuery;
+use Parse\ParseACL;
+use Parse\ParsePush;
+use Parse\ParseUser;
+use Parse\ParseInstallation;
+use Parse\ParseException;
+use Parse\ParseAnalytics;
+use Parse\ParseFile;
+use Parse\ParseCloud;
+use Parse\ParseClient;
  
 ParseClient::initialize('Gjy7cLCCl7HcIsLS6myQDIxUvYSdz2ZCVNGHpd8G', 'dtMnemfa8ZLomhY6ngmcEC3MQeFwao0z3HBlbKor', 'ONl2Nnb4QAfcFIZNOXrzgMeyzBnuhio63TIjqMWV');
 
@@ -23,7 +31,7 @@ for ($i = 0; $i < count($results); $i++) {
   if ($object->get("data")!=null) {
   	# code...
   	
-  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - ';
+  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - ' $object->getUpdatedAt();
   	echo "<br>";
   	
   }
