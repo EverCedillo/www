@@ -24,8 +24,8 @@ for ($i = 0; $i < count($results); $i++) {
   if ($object->get("data")!=null) {
   	# code...
   	
-  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - ';
-  	echo "<br>";
+  	#echo $object->getObjectId() . ' - ' . $object->get('data') . ' - ';
+  	#echo "<br>";
   	
   }
   
@@ -41,6 +41,7 @@ for ($i = 0; $i < count($results); $i++) {
 	var TestScale = Parse.Object.extend("TestScale");
 	var query = new Parse.Query(TestScale);
 	query.exists("data");
+	query.descending("createdAt");
 	query.find({
   		success: function(results) {
     	var content="//<br>";
