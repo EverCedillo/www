@@ -21,7 +21,7 @@ for ($i = 0; $i < count($results); $i++) {
   $object = $results[$i];
   if ($object->get("data")!=null) {
   	# code...
-  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '. $object->getCreatedAt();
+  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '. $object->get('createdAt');
   	echo "<br>";
   }
   
