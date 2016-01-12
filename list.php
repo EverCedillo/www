@@ -4,9 +4,10 @@ require 'vendor/autoload.php';
 
 header("refresh: 10;");
  
-use Parse\ParseClient;
-use Parse\ParseObject;
-use Parse\ParseQuery;
+
+use Parse\*;
+
+
  
 ParseClient::initialize('Gjy7cLCCl7HcIsLS6myQDIxUvYSdz2ZCVNGHpd8G', 'dtMnemfa8ZLomhY6ngmcEC3MQeFwao0z3HBlbKor', 'ONl2Nnb4QAfcFIZNOXrzgMeyzBnuhio63TIjqMWV');
 
@@ -47,7 +48,7 @@ for ($i = 0; $i < count($results); $i++) {
     	// Do something with the returned Parse.Object values
     	for (var i = 0; i < results.length; i++) {
       		var object = results[i];
-      		alert(object.id + ' - ' + object.get('playerName'));
+      	
       		content=content+object.id + ' - ' + object.get('data') + ' - ' object.updatedAt + '<br>';
     	}
     	document.getElementsByTagName('list')[0].innerHTML=content;
