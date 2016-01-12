@@ -48,7 +48,7 @@ for ($i = 0; $i < count($results); $i++) {
     	for (var i = 0; i < results.length; i++) {
       		var object = results[i];
       	
-      		content=content+object.id + ' - ' + object.get('data') + ' - ' object.createdAt + '<br>';
+      		content=content+object.id + ' - ' + object.get('data') + ' - ' object.get('updatedAt') + '<br>';
     	}
     	document.getElementsByTagName('list')[0].innerHTML=content;
   },
