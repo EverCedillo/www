@@ -22,10 +22,8 @@ for ($i = 0; $i < count($results); $i++) {
   $object = $results[$i];
   if ($object->get("data")!=null) {
   	# code...
-  	try{
-  	$created = $object->getCreatedAt();
-  }catch (Exception $e){echo $e;}
-  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '. $created;
+  	
+  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '.$object;
   	echo "<br>";
   	
   }
