@@ -1,3 +1,4 @@
+<list></list>
 <?php
 require 'vendor/autoload.php';
 
@@ -32,3 +33,28 @@ for ($i = 0; $i < count($results); $i++) {
 
 
 ?>
+
+<script src="//www.parsecdn.com/js/parse-1.6.14.min.js"></script>
+<script type="text/javascript" charset="utf-8" async defer>
+	
+	Parse.initialize("Gjy7cLCCl7HcIsLS6myQDIxUvYSdz2ZCVNGHpd8G", "5z9QFpnWx09U1aznCU5z38KRa53tFufHiGAXZwVO");
+	var TestScale = Parse.Object.extend("TestScale");
+	var query = new Parse.Query(TestScale);
+	query.exists("data");
+	query.find({
+  		success: function(results) {
+    	var content="//<br>";
+    	// Do something with the returned Parse.Object values
+    	for (var i = 0; i < results.length; i++) {
+      		var object = results[i];
+      		alert(object.id + ' - ' + object.get('playerName'));
+      		content=content+object.id + ' - ' + object.get('data') + ' - ' object.updatedAt + '<br>';
+    	}
+    	document.getElementsByTagName('list')[0].innerHTML=content;
+  },
+  error: function(error) {
+    
+  }
+});
+</script>
+
