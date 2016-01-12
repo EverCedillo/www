@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
-header("refresh: 70;");
+header("refresh: 10;");
  
 use Parse\ParseClient;
 use Parse\ParseObject;
@@ -21,7 +21,7 @@ for ($i = 0; $i < count($results); $i++) {
   $object = $results[$i];
   if ($object->get("data")!=null) {
   	# code...
-  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '. $object->getUpdatedAt();
+  	echo $object->getObjectId() . ' - ' . $object->get('data') . ' - '. $object->get('updatedAt');
   	echo "<br>";
   }
   
