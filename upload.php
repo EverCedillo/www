@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $path = $_POST["file"];
-$pic = $_POS["pic"];
+$pic = $_POST["pic"];
 
 echo base64_to_jpeg($pic,$path);
 
