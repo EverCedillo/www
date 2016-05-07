@@ -3,7 +3,7 @@
 $path = $_GET["file"];
 $pic = $_GET["pic"];
 
-base64_to_jpeg($pic,$path);
+echo base64_to_jpeg($pic,$path);
 
 echo $path;
 
