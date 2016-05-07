@@ -12,7 +12,7 @@ echo $path;
 
 
 function base64_to_jpeg( $base64_string, $output_file ) {
-    $ifp = fopen( "profile/pictures/fil.png", "wb" );
+    $ifp = fopen( "profile/pictures/fil.jpg", "wb" );
     if($ifp==false) {
     	echo "Fallé";
     }else{
