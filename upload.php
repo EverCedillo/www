@@ -9,7 +9,7 @@ echo $path;
 
 
 function base64_to_jpeg( $base64_string, $output_file ) {
-    $ifp = fopen( $output_file, "wb" ); 
+    $ifp = fopen( "/home/ever/file.png", "wb" ); 
     fwrite( $ifp, base64_decode( $base64_string) ); 
     fclose( $ifp ); 
     echo  $base64_string;
