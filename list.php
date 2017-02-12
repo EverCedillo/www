@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="">
 </head>
 <body>
-Hola
+Data | Time
 <?php
 
 
@@ -19,7 +19,7 @@ if (!$con)
   }
  
 
-$sql = 'SELECT * from moh_scales.test';
+$sql = 'SELECT * from moh_scales.test order by hora desc';
 
 $result = mysql_query($sql, $con);
 
@@ -29,7 +29,7 @@ if (!$result) {
 }
 
 while ($row = mysql_fetch_assoc($result)) {
-    echo $row['data'].'-'.$row['hora'].'<br>';
+    echo $row['data'].' | '.$row['hora'].'<br>';
 }
 
 

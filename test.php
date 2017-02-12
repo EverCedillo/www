@@ -26,7 +26,7 @@ if(!mysql_select_db("moh_scales", $con)){
 
 date_default_timezone_set('America/Mexico_City');
 $timestamp = date('Y-m-d G:i:s');
-echo $timestamp;
+
 
 
 
@@ -48,7 +48,7 @@ if (!mysql_query($sql,$con))
  
 
 
-echo $_GET[data];
+echo $_GET[data]." | ".$timestamp;
 
 
 ?>
