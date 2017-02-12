@@ -9,6 +9,7 @@
 <body>
 Data | Time
 <?php
+header("refresh: 60;");
 
 
 $con = mysql_connect("localhost","web","ohana_psw");
