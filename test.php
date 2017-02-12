@@ -7,7 +7,7 @@
 	
 </head>
 <body>
-HOla
+
 	<?php
 
 

@@ -1,18 +1,25 @@
-<list></list>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+Hola
 <?php
 
-
-$l="";
 
 $con = mysql_connect("localhost","web","ohana_psw");
 if (!$con)
   {
-  die('Could not connect: ' . mysql_error());
+  echo "conn failed";
+  exit;
   }
  
-mysql_select_db("web", $con);
 
-$sql = "SELECT * from `moh_scales`.`test`;";
+$sql = 'SELECT * from moh_scales.test';
 
 $result = $conn->query($sql);
 
@@ -24,6 +31,7 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
+/*
 $conn->close();
  
  /*
@@ -60,11 +68,11 @@ $results = $query->find();
 for ($i = 0; $i < count($results); $i++) {
   $object = $results[$i];
   if ($object->get("data")!=null) {
-  	# code...
-  	
-  	#echo $object->getObjectId() . ' - ' . $object->get('data') . ' - ';
-  	#echo "<br>";
-  	
+    # code...
+    
+    #echo $object->getObjectId() . ' - ' . $object->get('data') . ' - ';
+    #echo "<br>";
+    
   }
   
 }
@@ -74,26 +82,26 @@ for ($i = 0; $i < count($results); $i++) {
 
 <script src="//www.parsecdn.com/js/parse-1.6.14.min.js"></script>
 <script type="text/javascript" charset="utf-8" async defer>
-	
-	Parse.initialize("Gjy7cLCCl7HcIsLS6myQDIxUvYSdz2ZCVNGHpd8G", "5z9QFpnWx09U1aznCU5z38KRa53tFufHiGAXZwVO");
-	var TestScale = Parse.Object.extend("TestScale");
-	var query = new Parse.Query(TestScale);
-	query.exists("data");
-	query.descending("createdAt");
-	query.find({
-  		success: function(results) {
-    	var content="//<br>";
-    	// Do something with the returned Parse.Object values
-    	for (var i = 0; i < results.length; i++) {
-      		var object = results[i];
-      		var date=object.createdAt;
-      		console.log(date.toString());
-      		var d=date.toString();
-      		content=content+object.id + ' - ' + object.get('data') + ' - '+ d + '<br>';
-      		console.log(date);
+  
+  Parse.initialize("Gjy7cLCCl7HcIsLS6myQDIxUvYSdz2ZCVNGHpd8G", "5z9QFpnWx09U1aznCU5z38KRa53tFufHiGAXZwVO");
+  var TestScale = Parse.Object.extend("TestScale");
+  var query = new Parse.Query(TestScale);
+  query.exists("data");
+  query.descending("createdAt");
+  query.find({
+      success: function(results) {
+      var content="//<br>";
+      // Do something with the returned Parse.Object values
+      for (var i = 0; i < results.length; i++) {
+          var object = results[i];
+          var date=object.createdAt;
+          console.log(date.toString());
+          var d=date.toString();
+          content=content+object.id + ' - ' + object.get('data') + ' - '+ d + '<br>';
+          console.log(date);
 
-    	}
-    	document.getElementsByTagName('list')[0].innerHTML=content;
+      }
+      document.getElementsByTagName('list')[0].innerHTML=content;
   },
   error: function(error) {
     
@@ -102,3 +110,5 @@ for ($i = 0; $i < count($results); $i++) {
 </script>
 */
 ?>
+</body>
+</html>
