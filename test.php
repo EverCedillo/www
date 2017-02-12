@@ -35,8 +35,9 @@ if (!mysql_query($sql,$con))
   }
   
  
+ /*
 mysql_close($con)
-
+*/
 echo $_GET[data];
 
 
