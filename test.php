@@ -24,17 +24,19 @@ if(!mysql_select_db("moh_scales", $con)){
 
 
 $sql = "INSERT INTO `moh_scales`.`test` (`id`, `data`, `hora`) VALUES (NULL, '$_GET[data]', CURRENT_TIMESTAMP);";
+
+$sql = "select * from test"
  
- /*
+ 
 
 if (!mysql_query($sql,$con))
   {
-  	echo "failed to insert";
+  	echo "failed to execute";
   }
   
  
 mysql_close($con)
-*/
+
 echo $_GET[data];
 
 
