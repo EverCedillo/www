@@ -27,7 +27,7 @@ if(!mysql_select_db("moh_scales", $con)){
 
 $sql = "INSERT INTO `moh_scales`.`test` (`id`, `data`, `hora`) VALUES (NULL, '$_GET[data]', CURRENT_TIMESTAMP);";
 
-$sql = 'select * from moh_scales.test'
+$sql = 'select * from moh_scales.test';
  
  
 
