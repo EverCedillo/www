@@ -28,8 +28,8 @@ if (!$result) {
     exit;
 }
 
-while ($fila = mysql_fetch_assoc($result)) {
-    echo $fila['data'];
+while ($row = mysql_fetch_assoc($result)) {
+    echo $row['data'].'-'.$row['hora'].'<br>';
 }
 
 

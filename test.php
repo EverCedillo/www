@@ -24,8 +24,13 @@ if(!mysql_select_db("moh_scales", $con)){
 }
 
 
+date_default_timezone_set('America/Mexico_City');
+$timestamp = date('Y-m-d G:i:s');
+echo $timestamp;
 
-$sql = "INSERT INTO `moh_scales`.`test` (`id`, `data`, `hora`) VALUES (NULL, '$_GET[data]', CURRENT_TIMESTAMP);";
+
+
+$sql = "INSERT INTO `moh_scales`.`test` (`id`, `data`, `hora`) VALUES (NULL, '$_GET[data]', '$timestamp');";
 
 //$sql = 'select * from moh_scales.test';
  
