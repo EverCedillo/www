@@ -21,16 +21,18 @@ if (!$con)
 
 $sql = 'SELECT * from moh_scales.test';
 
-$result = $conn->query($sql);
+$result = mysql_query($sql, $enlace);
 
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - " . $row["data"]. "-" . $row["hora"]. "<br>";
-    }
-} else {
-    echo "0 results";
+if (!$result) {
+    echo "error"
+    exit;
 }
+
+while ($fila = mysql_fetch_assoc($resultado)) {
+    echo $fila['data'];
+}
+
+
 /*
 $conn->close();
  
