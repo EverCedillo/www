@@ -18,11 +18,11 @@ if (!$con)
   exit;
   }
  
-/*
+
 $sql = 'SELECT * from moh_scales.test';
 
 $result = mysql_query($sql, $con);
-
+/*
 if (!$result) {
     echo "error"
     exit;
