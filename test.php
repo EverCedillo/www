@@ -21,21 +21,20 @@ if(!mysql_select_db("moh_scales", $con)){
 	echo "failed to find database";
 }
 
-/*
+
 
 $sql = "INSERT INTO `moh_scales`.`test` (`id`, `data`, `hora`) VALUES (NULL, '$_GET[data]', CURRENT_TIMESTAMP);";
  
+
 if (!mysql_query($sql,$con))
   {
-  	debug_to_console(mysql_error())
-  die('Error: ' . mysql_error());
+  	echo "failed to insert";
   }
-	debug_to_console("added");
   
  
 mysql_close($con)
 
-*/
+
 echo $_GET[data];
 
 
