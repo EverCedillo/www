@@ -25,6 +25,7 @@ if(!mysql_select_db("moh_scales", $con)){
 
 $sql = "INSERT INTO `moh_scales`.`test` (`id`, `data`, `hora`) VALUES (NULL, '$_GET[data]', CURRENT_TIMESTAMP);";
  
+ /*
 
 if (!mysql_query($sql,$con))
   {
@@ -33,8 +34,7 @@ if (!mysql_query($sql,$con))
   
  
 mysql_close($con)
-
-
+*/
 echo $_GET[data];
 
 
