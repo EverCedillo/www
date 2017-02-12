@@ -16,8 +16,12 @@ if (!$con)
   {
   die('Could not connect: ' . mysql_error());
   }
- /*
-mysql_select_db("web", $con);
+
+if(!mysql_select_db("moh_scales", $con)){
+	echo "failed to find database";
+}
+
+/*
 
 $sql = "INSERT INTO `moh_scales`.`test` (`id`, `data`, `hora`) VALUES (NULL, '$_GET[data]', CURRENT_TIMESTAMP);";
  
