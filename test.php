@@ -1,5 +1,14 @@
-<?php
-
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+</head>
+<body>
+Hi
+	<?php
 
 $con = mysql_connect("localhost","web","ohana_psw");
 if (!$con)
@@ -34,3 +43,7 @@ function debug_to_console( $data ) {
     echo $output;
 }
 ?>
+
+</body>
+</html>
+
