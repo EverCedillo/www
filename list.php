@@ -21,14 +21,14 @@ if (!$con)
 
 $sql = 'SELECT * from moh_scales.test';
 
-$result = mysql_query($sql, $enlace);
+$result = mysql_query($sql, $con);
 
 if (!$result) {
     echo "error"
     exit;
 }
 
-while ($fila = mysql_fetch_assoc($resultado)) {
+while ($fila = mysql_fetch_assoc($result)) {
     echo $fila['data'];
 }
 
