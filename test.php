@@ -14,11 +14,13 @@ HOla
 $con = mysql_connect("localhost","web","ohana_psw");
 if (!$con)
   {
-  die('Could not connect: ' . mysql_error());
+  echo mysql_error();
+  exit;
   }
 
 if(!mysql_select_db("moh_scales", $con)){
 	echo "failed to find database";
+	exit;
 }
 
 
@@ -32,12 +34,13 @@ $sql = "select * from test"
 if (!mysql_query($sql,$con))
   {
   	echo "failed to execute";
+  	exit;
   }
   
  
- /*
+ 
 mysql_close($con)
-*/
+
 echo $_GET[data];
 
 
