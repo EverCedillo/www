@@ -31,11 +31,13 @@ $sql = 'select * from moh_scales.test'
  
  
 
+/*
 if (!mysql_query($sql,$con))
   {
   	echo "failed to execute";
   	exit;
   }
+  */
   
  
  
