@@ -1,5 +1,43 @@
 <list></list>
 <?php
+
+
+$l="";
+
+$con = mysql_connect("localhost","web","ohana_psw");
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+ 
+mysql_select_db("web", $con);
+
+$sql = "SELECT * from `moh_scales`.`test`;";
+
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - " . $row["data"]. "-" . $row["hora"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+ 
+ /*
+if (!mysql_query($sql,$con))
+  {
+  die('Error: ' . mysql_error());
+  }
+  
+  
+ 
+mysql_close($con)
+
+
+
 require 'vendor/autoload.php';
 
 header("refresh: 60;");
@@ -32,7 +70,7 @@ for ($i = 0; $i < count($results); $i++) {
 }
 
 
-?>
+
 
 <script src="//www.parsecdn.com/js/parse-1.6.14.min.js"></script>
 <script type="text/javascript" charset="utf-8" async defer>
@@ -62,4 +100,5 @@ for ($i = 0; $i < count($results); $i++) {
   }
 });
 </script>
-
+*/
+?>

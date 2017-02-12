@@ -1,21 +1,24 @@
 <?php
 
-require 'vendor/autoload.php';
+
+$con = mysql_connect("localhost","web","ohana_psw");
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
  
-use Parse\ParseClient;
+mysql_select_db("web", $con);
+
+$sql = "INSERT INTO `moh_scales`.`test` (`id`, `data`, `hora`) VALUES (NULL, '$_GET[data]', CURRENT_TIMESTAMP);";
  
-ParseClient::initialize('Gjy7cLCCl7HcIsLS6myQDIxUvYSdz2ZCVNGHpd8G', 'dtMnemfa8ZLomhY6ngmcEC3MQeFwao0z3HBlbKor', 'ONl2Nnb4QAfcFIZNOXrzgMeyzBnuhio63TIjqMWV');
-
-$holi=$_GET["data"];
-
-echo $data;
-echo $holi;
-
-use Parse\ParseObject;
+if (!mysql_query($sql,$con))
+  {
+  die('Error: ' . mysql_error());
+  }
+	echo "1 record added";
+  
  
-$testObject = ParseObject::create("TestScale");
-$testObject->set("data", $holi);
-$testObject->save();
+mysql_close($con)
 
-echo $testObject;
+echo $_GET[data];
 ?>
