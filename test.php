@@ -13,12 +13,24 @@ $sql = "INSERT INTO `moh_scales`.`test` (`id`, `data`, `hora`) VALUES (NULL, '$_
  
 if (!mysql_query($sql,$con))
   {
+  	debug_to_console(mysql_error())
   die('Error: ' . mysql_error());
   }
-	echo "1 record added";
+	debug_to_console("added");
   
  
 mysql_close($con)
 
+debug_to_console($_GET[data])
 echo $_GET[data];
+
+function debug_to_console( $data ) {
+
+    if ( is_array( $data ) )
+        $output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
+    else
+        $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
+
+    echo $output;
+}
 ?>
