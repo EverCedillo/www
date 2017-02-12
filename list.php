@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="">
 </head>
 <body>
-Data | Time
+Data | Time <br>
 <?php
 header("refresh: 60;");
 
